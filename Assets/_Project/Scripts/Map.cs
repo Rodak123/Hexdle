@@ -15,8 +15,10 @@ namespace Rodak.Hexdle
         [SerializeField] private CellBehaviour cellBehaviourPrefab;
 
         private HexagonGrid<Cell> grid;
+        private readonly List<char> revealedLetters = new();
 
-        public event Action<char> OnLetterRevealed;
+        public List<char> RevealedLetters => revealedLetters;
+
 
         private void Awake()
         {
@@ -32,21 +34,30 @@ namespace Rodak.Hexdle
 
             grid = new(mapSize, (hexagon) => new(hexagon));
 
-            List<Hexagon> positions = new(grid.Hexagons);
-            positions.Shuffle();
+            List<Hexagon> letterPositions = new(grid.Hexagons);
+            letterPositions.Shuffle();
 
             for (int i = 0; i < Words.Letters.Count; i++)
             {
-                grid[positions[i]].SetLetter(Words.Letters[i]);
+                grid[letterPositions[i]].SetLetter(Words.Letters[i]);
             }
 
-            foreach (Hexagon hexagon in grid.Hexagons)
+            List<Hexagon> gridHexagons = new(grid.Hexagons);
+
+            if (GameStateManager.State.CellStates.Length != gridHexagons.Count)
+            {
+                GameStateManager.State.CellStates = new GameStateManager.CellState[gridHexagons.Count];
+            }
+
+            foreach (Hexagon hexagon in gridHexagons)
             {
                 Cell cell = grid[hexagon];
 
+                int saveIndex = gridHexagons.IndexOf(hexagon);
+
                 cell.OnRevealed += Cell_OnRevealed;
 
-                cell.UpdateDanger(grid);
+                cell.UpdateState(saveIndex, grid);
 
                 CellBehaviour cellBehaviour = Instantiate(cellBehaviourPrefab, transform);
                 cellBehaviour.Cell = cell;
@@ -62,7 +73,7 @@ namespace Rodak.Hexdle
         {
             if (cell.HasLetter)
             {
-                OnLetterRevealed?.Invoke(cell.Letter);
+                revealedLetters.Add(cell.Letter);
             }
 
             if (cell.IsInsideWord)
@@ -78,7 +89,7 @@ namespace Rodak.Hexdle
                     {
                         continue;
                     }
-                    neighbor.Reveal();
+                    neighbor.TryReveal();
                 }
             }
         }

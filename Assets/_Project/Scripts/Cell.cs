@@ -9,18 +9,38 @@ namespace Rodak.Hexdle
     {
         private char? letter = null;
         private int dangerLevel;
-        private bool isRevealed;
-        private bool isFlagged;
+
+        private int saveIndex;
+
+        private GameStateManager.CellState State => saveIndex >= GameStateManager.State.CellStates.Length ? null : GameStateManager.State.CellStates[saveIndex];
 
         public readonly Hexagon Position;
         public char Letter => letter.HasValue ? letter.Value : '*';
         public bool HasLetter => letter != null;
 
         public int DangerLevel => dangerLevel;
-        public bool IsRevealed => isRevealed;
-        public bool IsFlagged => isFlagged;
+        public bool IsRevealed
+        {
+            get => State?.IsRevealed ?? false;
+            private set
+            {
+                if (State == null) return;
+                State.IsRevealed = value;
+                GameStateManager.Save();
+            }
+        }
+        public bool IsFlagged
+        {
+            get => State?.IsFlagged ?? false;
+            private set
+            {
+                if (State == null) return;
+                State.IsFlagged = value;
+                GameStateManager.Save();
+            }
+        }
 
-        public bool IsInsideWord => HasLetter && GameManager.Instance.Word.Contains(Letter);
+        public bool IsInsideWord => HasLetter && GameStateManager.State.Word.Contains(Letter);
 
         public event Action<Cell> OnRevealed;
 
@@ -43,8 +63,9 @@ namespace Rodak.Hexdle
             this.letter = letter;
         }
 
-        public void UpdateDanger(HexagonGrid<Cell> grid)
+        public void UpdateState(int saveIndex, HexagonGrid<Cell> grid)
         {
+            this.saveIndex = saveIndex;
             dangerLevel = 0;
 
             foreach (Hexagon around in Position.GetNeighbors())
@@ -61,19 +82,29 @@ namespace Rodak.Hexdle
 
                 dangerLevel++;
             }
+
+            if (State == null)
+            {
+                GameStateManager.State.CellStates[saveIndex] = new();
+            }
+            else
+            {
+                if (State.IsRevealed) OnRevealed?.Invoke(this);
+            }
         }
 
-        public void Reveal()
+        public bool TryReveal()
         {
-            if (isRevealed || isFlagged) return;
-            isRevealed = true;
+            if (IsRevealed || IsFlagged) return false;
+            IsRevealed = true;
             OnRevealed?.Invoke(this);
+            return true;
         }
 
         public void ToggleFlag()
         {
-            if (isRevealed) return;
-            isFlagged = !isFlagged;
+            if (IsRevealed) return;
+            IsFlagged = !IsFlagged;
         }
 
         public enum CellType

@@ -19,17 +19,19 @@ namespace Rodak.Hexdle
             strike.SetActive(false);
 
             letterText.text = $"{Letter}";
-
-            Map.OnLetterRevealed += Map_OnLetterRevealed;
         }
 
-        private void Map_OnLetterRevealed(char letter)
+        private void Update()
         {
-            if (letter != Letter) return;
-            if (GameManager.Instance.Word.Contains(letter))
+            if (!Map.RevealedLetters.Contains(Letter))
             {
-                letterTextColor.SetIsInverted(!letterTextColor.IsInverted);
-                bgColor.SetIsInverted(!bgColor.IsInverted);
+                return;
+            }
+
+            if (GameStateManager.State.Word.Contains(Letter))
+            {
+                letterTextColor.SetIsInverted(true);
+                bgColor.SetIsInverted(false);
             }
             else
             {

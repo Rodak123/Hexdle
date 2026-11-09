@@ -8,11 +8,11 @@ namespace Rodak.Hexdle
     {
         [SerializeField] private Color[] colors;
 
-        private int selectedColorIndex;
+        private int SelectedColorIndex => GameStateManager.State.ColorIndex;
 
-        private int NextSelectedColorIndex => (selectedColorIndex + 1) % colors.Length;
+        private int NextSelectedColorIndex => (SelectedColorIndex + 1) % colors.Length;
 
-        public Color Color => colors[selectedColorIndex];
+        public Color Color => colors[SelectedColorIndex];
         public Color NextColor => colors[NextSelectedColorIndex];
 
         public event Action OnColorChanged;
@@ -24,7 +24,8 @@ namespace Rodak.Hexdle
 
         public void CycleColor()
         {
-            selectedColorIndex = NextSelectedColorIndex;
+            GameStateManager.State.ColorIndex = NextSelectedColorIndex;
+            GameStateManager.Save();
             OnColorChanged?.Invoke();
         }
     }

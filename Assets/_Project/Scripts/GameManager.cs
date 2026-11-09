@@ -1,43 +1,42 @@
 using System;
-using System.Collections.Generic;
 using Rodak.Utils.Singleton;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Rodak.Hexdle
 {
     public class GameManager : SingletonMonoBehaviour<GameManager>
     {
-        private int penalty;
-        private string word;
-
-        private readonly List<string> wrongGuesses = new();
-
         public event Action OnGameStarted;
         public event Action OnPenaltyGained;
 
         public event Action OnGuessedWrong;
         public event Action OnGuessedRight;
 
-        public string Word => word;
-        public string Definition => Words.WordDefinitions[word];
-
-        public int Penalty => penalty;
-
         protected override void Awake()
         {
             base.Awake();
 
-            word = Words.WordOfTheDay;
+            GameStateManager.Load();
 
-            int seed = word.GetHashCode();
-            UnityEngine.Random.InitState(seed);
-
-            Debug.Log($"{Word} -> {Definition}");
+            string word = GameStateManager.State.Word;
+            Debug.Log($"{word} -> {Words.WordDefinitions[word]}");
         }
 
         private void Start()
         {
             StartGame();
+        }
+
+        private void Update()
+        {
+            if (Keyboard.current.f4Key.wasPressedThisFrame)
+            {
+                GameStateManager.Reset();
+                GameStateManager.Save();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
 
         private void StartGame()
@@ -61,7 +60,7 @@ namespace Rodak.Hexdle
 
         public void GuessWord(string word)
         {
-            if (word == Word)
+            if (word == GameStateManager.State.Word)
             {
                 OnGuessedRight?.Invoke();
                 // TODO: Add UI
@@ -69,14 +68,16 @@ namespace Rodak.Hexdle
             else
             {
                 GainPenalty(PenaltyType.GuessWrong);
-                wrongGuesses.Add(word);
+                GameStateManager.State.WrongGuesses.Add(word);
+                GameStateManager.Save();
                 OnGuessedWrong?.Invoke();
             }
         }
 
         public void GainPenalty(PenaltyType penaltyType)
         {
-            penalty += GetPenaltyAmount(penaltyType);
+            GameStateManager.State.Penalty += GetPenaltyAmount(penaltyType);
+            GameStateManager.Save();
             OnPenaltyGained?.Invoke();
         }
 

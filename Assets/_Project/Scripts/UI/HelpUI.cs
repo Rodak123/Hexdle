@@ -33,6 +33,7 @@ namespace Rodak.Hexdle
         private void Button_OnClick()
         {
             wordUI.TryGuess();
+            WordUI_OnWordTyped(titleText.text);
         }
 
         private void WordUI_OnWordTyped(string word)
@@ -40,10 +41,22 @@ namespace Rodak.Hexdle
             titleText.text = word;
             if (Words.WordDefinitions.TryGetValue(word, out string definition))
             {
-                submitButton.interactable = true;
-                bodyText.text = definition;
-                submitTextColor.SetIsInverted(true);
-                submitBgImageColor.SetIsInverted(false);
+                bool alreadyGuessed = GameStateManager.State.WrongGuesses.Contains(word);
+
+                if (alreadyGuessed)
+                {
+                    bodyText.text = "Word already guessed.";
+                    submitTextColor.SetIsInverted(false);
+                    submitBgImageColor.SetIsInverted(true);
+                    submitButton.interactable = false;
+                }
+                else
+                {
+                    submitButton.interactable = true;
+                    bodyText.text = definition;
+                    submitTextColor.SetIsInverted(true);
+                    submitBgImageColor.SetIsInverted(false);
+                }
             }
             else
             {

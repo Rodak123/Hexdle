@@ -9,7 +9,7 @@ namespace Rodak.Hexdle
 
         private void Update()
         {
-            penaltyText.text = $"{GameManager.Instance.Penalty}";
+            penaltyText.text = $"{GameStateManager.State.Penalty}";
         }
     }
 }

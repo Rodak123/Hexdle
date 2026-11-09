@@ -5,12 +5,17 @@ namespace Rodak.Hexdle
 {
     public class WordLetterUI : MonoBehaviour
     {
+        public bool IsActive;
+
         [Header("UI")]
         [SerializeField] private TMP_Text text;
 
         [Space]
         [SerializeField] private GameObject typeIndicator;
         [SerializeField] private float typeIndicatorFlashInterval = 0.35f;
+
+        [Space]
+        [SerializeField] private GameObject inactiveIndicator;
 
         private char letter = ' ';
         private float typeIndicatorFlashTimer;
@@ -27,6 +32,8 @@ namespace Rodak.Hexdle
 
         private void Update()
         {
+            inactiveIndicator.SetActive(!IsActive);
+
             if (isSelected)
             {
                 typeIndicatorFlashTimer += Time.deltaTime;

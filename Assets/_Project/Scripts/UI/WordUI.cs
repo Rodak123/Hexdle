@@ -16,11 +16,12 @@ namespace Rodak.Hexdle
         private float eraseTimer;
 
         private readonly List<WordLetterUI> wordLetters = new();
+        private int activeLetterCount;
 
         private int selectedWordLetterIndex;
         private WordLetterUI SelectedWordLetter => wordLetters[selectedWordLetterIndex];
 
-        public bool ReadyToGuess => selectedWordLetterIndex == wordLetters.Count - 1 && SelectedWordLetter.HasLetter && Words.WordDefinitions.ContainsKey(GetWord());
+        public bool ReadyToGuess => selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter && Words.WordDefinitions.ContainsKey(GetWord());
 
         public event Action<string> OnWordTyped;
         public event Action OnWordErased;
@@ -73,14 +74,17 @@ namespace Rodak.Hexdle
             string word = string.Empty;
             foreach (WordLetterUI wordLetterUI in wordLetters)
             {
-                word += wordLetterUI.Letter;
+                if (wordLetterUI.IsActive)
+                {
+                    word += wordLetterUI.Letter;
+                }
             }
             return word;
         }
 
         private void Erase()
         {
-            if (selectedWordLetterIndex == wordLetters.Count - 1 && SelectedWordLetter.HasLetter)
+            if (selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter)
             {
                 SelectedWordLetter.Erase();
                 OnWordErased?.Invoke();
@@ -106,10 +110,15 @@ namespace Rodak.Hexdle
                 Destroy(child.gameObject);
             }
 
-            for (int i = 0; i < GameManager.Instance.Word.Length; i++)
+            activeLetterCount = GameStateManager.State.Word.Length;
+            for (int i = 0; i < Words.MAX_WORD_LENGTH; i++)
             {
+                bool isActive = i < activeLetterCount;
+
                 WordLetterUI wordLetterUI = Instantiate(wordLetterUIPrefab, wordLettersContainer);
                 wordLetters.Add(wordLetterUI);
+
+                wordLetterUI.IsActive = isActive;
             }
 
             selectedWordLetterIndex = 0;
@@ -122,18 +131,13 @@ namespace Rodak.Hexdle
 
             if (!SelectedWordLetter.Type(letter)) return;
 
-            if (selectedWordLetterIndex < wordLetters.Count - 1)
+            if (selectedWordLetterIndex < activeLetterCount - 1)
             {
                 SelectLetterAt(selectedWordLetterIndex + 1);
             }
             else
             {
-                string word = string.Empty;
-                foreach (WordLetterUI wordLetterUI in wordLetters)
-                {
-                    word += wordLetterUI.Letter;
-                }
-                OnWordTyped?.Invoke(word);
+                OnWordTyped?.Invoke(GetWord());
             }
         }
 

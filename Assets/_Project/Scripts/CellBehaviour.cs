@@ -140,8 +140,10 @@ namespace Rodak.Hexdle
 
         private void OnClickLeft()
         {
-            GameManager.Instance.GainPenalty(GameManager.PenaltyType.RevealCells);
-            Cell.Reveal();
+            if (Cell.TryReveal())
+            {
+                GameManager.Instance.GainPenalty(GameManager.PenaltyType.RevealCells);
+            }
         }
 
         private void OnClickRight()
