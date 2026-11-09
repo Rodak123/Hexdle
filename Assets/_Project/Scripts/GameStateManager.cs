@@ -34,14 +34,17 @@ namespace Rodak.Hexdle
                 Reset();
             }
 
-
             int seed = state.Word.GetHashCode();
             UnityEngine.Random.InitState(seed);
         }
 
         public static void Reset()
         {
-            state = new();
+            state = new()
+            {
+                ColorIndex = state.ColorIndex,
+                SeenInfo = state.SeenInfo,
+            };
         }
 
         [Serializable]
