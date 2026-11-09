@@ -84,6 +84,7 @@ namespace Rodak.Hexdle
 
         private void Erase()
         {
+            if (GameStateManager.State.GuessedRight) return;
             if (selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter)
             {
                 SelectedWordLetter.Erase();
@@ -118,11 +119,20 @@ namespace Rodak.Hexdle
                 WordLetterUI wordLetterUI = Instantiate(wordLetterUIPrefab, wordLettersContainer);
                 wordLetters.Add(wordLetterUI);
 
+                wordLetterUI.Index = i;
                 wordLetterUI.IsActive = isActive;
             }
 
-            selectedWordLetterIndex = 0;
-            SelectedWordLetter.Select();
+            for (int i = 0; i < wordLetters.Count; i++)
+            {
+                if (wordLetters[i].HasLetter)
+                {
+                    continue;
+                }
+                selectedWordLetterIndex = i;
+                SelectedWordLetter.Select();
+                break;
+            }
         }
 
         private void Keyboard_OnTextInput(char letter)
@@ -143,6 +153,7 @@ namespace Rodak.Hexdle
 
         public void TryGuess()
         {
+            if (GameStateManager.State.GuessedRight) return;
             if (!ReadyToGuess) return;
             GameManager.Instance.GuessWord(GetWord());
         }

@@ -6,6 +6,7 @@ namespace Rodak.Hexdle
     public class WordLetterUI : MonoBehaviour
     {
         public bool IsActive;
+        public int Index;
 
         [Header("UI")]
         [SerializeField] private TMP_Text text;
@@ -17,24 +18,33 @@ namespace Rodak.Hexdle
         [Space]
         [SerializeField] private GameObject inactiveIndicator;
 
-        private char letter = ' ';
         private float typeIndicatorFlashTimer;
 
         private bool isSelected;
 
-        public char Letter => letter;
-        public bool HasLetter => letter != ' ';
-
-        private void Awake()
+        private GameStateManager.LetterState State
         {
-            text.text = string.Empty;
+            get
+            {
+                if (GameStateManager.State.LetterStates[Index] == null)
+                {
+                    GameStateManager.State.LetterStates[Index] = new();
+                }
+                return GameStateManager.State.LetterStates[Index];
+            }
         }
+
+        public char Letter => HasLetter ? State.Letter[0] : ' ';
+        public bool HasLetter => State.Letter.Length != 0;
+
 
         private void Update()
         {
+            text.text = $"{Letter}";
+
             inactiveIndicator.SetActive(!IsActive);
 
-            if (isSelected)
+            if (isSelected && !GameStateManager.State.GuessedRight)
             {
                 typeIndicatorFlashTimer += Time.deltaTime;
                 if (typeIndicatorFlashTimer >= typeIndicatorFlashInterval)
@@ -52,15 +62,15 @@ namespace Rodak.Hexdle
         public bool Type(char letter)
         {
             if (HasLetter) return false;
-            this.letter = letter;
-            text.text = $"{letter}";
+            State.Letter = $"{letter}";
+            GameStateManager.Save();
             return true;
         }
 
         public void Erase()
         {
-            letter = ' ';
-            text.text = $"{letter}";
+            State.Letter = string.Empty;
+            GameStateManager.Save();
         }
 
         public void Select()

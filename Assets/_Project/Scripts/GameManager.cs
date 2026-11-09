@@ -50,10 +50,10 @@ namespace Rodak.Hexdle
             {
                 case PenaltyType.RevealCells:
                     return 1;
-                case PenaltyType.HitLetter:
-                    return 100;
                 case PenaltyType.GuessWrong:
-                    return 50;
+                    return 30;
+                case PenaltyType.HitLetter:
+                    return 80;
             }
             return 0;
         }
@@ -62,8 +62,9 @@ namespace Rodak.Hexdle
         {
             if (word == GameStateManager.State.Word)
             {
+                GameStateManager.State.GuessedRight = true;
+                GameStateManager.Save();
                 OnGuessedRight?.Invoke();
-                // TODO: Add UI
             }
             else
             {

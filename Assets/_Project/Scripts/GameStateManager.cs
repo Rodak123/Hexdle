@@ -54,8 +54,11 @@ namespace Rodak.Hexdle
             public bool GuessedRight;
 
             public CellState[] CellStates;
+            public LetterState[] LetterStates;
 
             public int ColorIndex;
+
+            public bool SeenInfo;
 
             public GameState()
             {
@@ -64,7 +67,9 @@ namespace Rodak.Hexdle
                 Penalty = 0;
                 WrongGuesses = new();
                 CellStates = new CellState[0];
+                LetterStates = new LetterState[Words.MAX_WORD_LENGTH];
                 ColorIndex = 0;
+                SeenInfo = false;
             }
         }
 
@@ -73,6 +78,17 @@ namespace Rodak.Hexdle
         {
             public bool IsRevealed;
             public bool IsFlagged;
+        }
+
+        [Serializable]
+        public class LetterState
+        {
+            public string Letter;
+
+            public LetterState()
+            {
+                Letter = string.Empty;
+            }
         }
     }
 }

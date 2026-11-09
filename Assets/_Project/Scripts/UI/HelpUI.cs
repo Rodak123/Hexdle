@@ -30,6 +30,18 @@ namespace Rodak.Hexdle
             submitButton.onClick.AddListener(Button_OnClick);
         }
 
+        private void Update()
+        {
+            if (GameStateManager.State.GuessedRight)
+            {
+                submitTextColor.SetIsInverted(false);
+                submitBgImageColor.SetIsInverted(true);
+                submitButton.interactable = false;
+                titleText.text = GameStateManager.State.Word;
+                bodyText.text = Words.WordDefinitions[GameStateManager.State.Word];
+            }
+        }
+
         private void Button_OnClick()
         {
             wordUI.TryGuess();
@@ -72,5 +84,6 @@ namespace Rodak.Hexdle
             submitBgImageColor.SetIsInverted(true);
             submitButton.interactable = false;
         }
+
     }
 }

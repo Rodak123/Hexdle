@@ -78,7 +78,8 @@ namespace Rodak.Hexdle
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
             Hexagon mouseHexagon = HexagonGeometryExtensions.GetHexagonAt(worldPoint.x, worldPoint.y);
-            if (mouseHexagon == Cell.Position)
+
+            if (mouseHexagon == Cell.Position && !UIUtils.IsPointerOverUI())
             {
                 isHovered = true;
             }
@@ -116,7 +117,7 @@ namespace Rodak.Hexdle
             outline.SetActive(isHovered);
             danger.SetActive(Cell.IsRevealed && Cell.IsInsideWord);
 
-            bool showMid = !Cell.IsRevealed && isPressed;
+            bool showMid = !Cell.IsRevealed && isPressed && !GameStateManager.State.GuessedRight;
 
             middle.SetActive(showMid);
             if (!Cell.IsFlagged)
@@ -140,6 +141,7 @@ namespace Rodak.Hexdle
 
         private void OnClickLeft()
         {
+            if (GameStateManager.State.GuessedRight) return;
             if (Cell.TryReveal())
             {
                 GameManager.Instance.GainPenalty(GameManager.PenaltyType.RevealCells);
@@ -148,6 +150,7 @@ namespace Rodak.Hexdle
 
         private void OnClickRight()
         {
+            if (GameStateManager.State.GuessedRight) return;
             Cell.ToggleFlag();
         }
     }
