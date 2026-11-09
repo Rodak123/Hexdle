@@ -42,12 +42,12 @@ namespace Rodak.Hexdle
 
             notFinishedContainer.SetActive(!GameStateManager.State.GuessedRight);
             finishedContainer.SetActive(GameStateManager.State.GuessedRight);
-            strainText.text = $"Using\n<size=140><b>{GameStateManager.State.Penalty}</b></size>\nSTRAIN";
+            strainText.text = $"{GameStateManager.State.Penalty}";
         }
 
         private void GameManager_OnGameStarted()
         {
-            container.SetActive(!GameStateManager.State.SeenInfo || GameStateManager.State.GuessedRight);
+            SetOpen(!GameStateManager.State.SeenInfo || GameStateManager.State.GuessedRight);
             ShowTab(GameStateManager.State.GuessedRight ? 1 : 0);
         }
 
