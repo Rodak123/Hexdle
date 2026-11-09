@@ -17,6 +17,11 @@ namespace Rodak.Hexdle
 
         public event Action OnColorChanged;
 
+        private void Update()
+        {
+            OnColorChanged?.Invoke();
+        }
+
         public Color GetColor(float alpha)
         {
             return new(Color.r, Color.g, Color.b, alpha);

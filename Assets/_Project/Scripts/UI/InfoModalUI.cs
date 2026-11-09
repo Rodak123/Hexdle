@@ -19,6 +19,10 @@ namespace Rodak.Hexdle
         [SerializeField] private GameObject notFinishedContainer;
         [SerializeField] private GameObject finishedContainer;
 
+        [Space]
+        [SerializeField] private GameObject buttonClosedIcon;
+        [SerializeField] private GameObject buttonOpenIcon;
+
         private void Awake()
         {
             GameManager.Instance.OnGameStarted += GameManager_OnGameStarted;
@@ -50,14 +54,22 @@ namespace Rodak.Hexdle
         private void GameManager_OnGuessedRight()
         {
             ShowTab(1);
-            container.SetActive(true);
+            SetOpen(true);
+        }
+
+        private void SetOpen(bool isOpen)
+        {
+            container.SetActive(isOpen);
+            GameStateManager.State.SeenInfo = true;
+            GameStateManager.Save();
+
+            buttonClosedIcon.SetActive(!isOpen);
+            buttonOpenIcon.SetActive(isOpen);
         }
 
         public void Toggle()
         {
-            container.SetActive(!container.activeSelf);
-            GameStateManager.State.SeenInfo = true;
-            GameStateManager.Save();
+            SetOpen(!container.activeSelf);
         }
 
         public void ShowTab(int index)
