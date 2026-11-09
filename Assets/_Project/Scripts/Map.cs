@@ -35,7 +35,14 @@ namespace Rodak.Hexdle
             grid = new(mapSize, (hexagon) => new(hexagon));
 
             List<Hexagon> letterPositions = new(grid.Hexagons);
-            letterPositions.Shuffle();
+
+            for (int n = 0; n < Words.Letters.Count - 1; n++)
+            {
+                int k = GameStateManager.Random.Next(0, n + 1);
+                Hexagon value = letterPositions[k];
+                letterPositions[k] = letterPositions[n];
+                letterPositions[n] = value;
+            }
 
             for (int i = 0; i < Words.Letters.Count; i++)
             {

@@ -10,6 +10,7 @@ namespace Rodak.Hexdle
         private static GameState state = new();
 
         public static GameState State => state;
+        public static System.Random Random;
 
         public static void Save()
         {
@@ -35,6 +36,7 @@ namespace Rodak.Hexdle
             }
 
             int seed = state.Word.GetHashCode();
+            Random = new(seed);
             UnityEngine.Random.InitState(seed);
         }
 

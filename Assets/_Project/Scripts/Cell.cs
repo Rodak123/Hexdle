@@ -87,10 +87,6 @@ namespace Rodak.Hexdle
             {
                 GameStateManager.State.CellStates[saveIndex] = new();
             }
-            else
-            {
-                if (State.IsRevealed) OnRevealed?.Invoke(this);
-            }
         }
 
         public bool TryReveal()

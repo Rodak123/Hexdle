@@ -12,8 +12,17 @@ namespace Rodak.Hexdle
 
         private void Awake()
         {
-            ColorManager.Instance.OnColorChanged += ColorManager_OnColorChanged;
             UpdateUI();
+        }
+
+        private void OnEnable()
+        {
+            ColorManager.Instance.OnColorChanged += ColorManager_OnColorChanged;
+        }
+
+        private void OnDisable()
+        {
+            if (ColorManager.HasInstance) ColorManager.Instance.OnColorChanged -= ColorManager_OnColorChanged;
         }
 
         private void UpdateUI()

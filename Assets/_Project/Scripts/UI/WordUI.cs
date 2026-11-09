@@ -123,6 +123,7 @@ namespace Rodak.Hexdle
                 wordLetterUI.IsActive = isActive;
             }
 
+            selectedWordLetterIndex = activeLetterCount - 1;
             for (int i = 0; i < wordLetters.Count; i++)
             {
                 if (wordLetters[i].HasLetter)
@@ -130,13 +131,19 @@ namespace Rodak.Hexdle
                     continue;
                 }
                 selectedWordLetterIndex = i;
-                SelectedWordLetter.Select();
                 break;
+            }
+            SelectedWordLetter.Select();
+
+            if (selectedWordLetterIndex == activeLetterCount - 1)
+            {
+                OnWordTyped?.Invoke(GetWord());
             }
         }
 
         private void Keyboard_OnTextInput(char letter)
         {
+            letter = $"{letter}".ToLower()[0];
             if (!Words.Letters.Contains(letter)) return;
 
             if (!SelectedWordLetter.Type(letter)) return;
