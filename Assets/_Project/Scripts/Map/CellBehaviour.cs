@@ -2,7 +2,6 @@ using Rodak.Hexagons;
 using Rodak.Hexagons.HexGeometry;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Rodak.Hexdle
@@ -10,6 +9,7 @@ namespace Rodak.Hexdle
     public class CellBehaviour : MonoBehaviour
     {
         public Cell Cell;
+        public Map Map;
 
         [Header("UI")]
         [SerializeField] private Image hexagonImage;
@@ -33,12 +33,8 @@ namespace Rodak.Hexdle
         [SerializeField] private GameObject flagThin;
         [SerializeField] private GameObject flagThick;
 
-        private bool WasMousePressedThisFrame => Mouse.current.leftButton.wasPressedThisFrame || Mouse.current.rightButton.wasPressedThisFrame;
-        private bool WasMouseReleasedThisFrame => Mouse.current.leftButton.wasReleasedThisFrame || Mouse.current.rightButton.wasReleasedThisFrame;
-
         private bool isHovered;
         private bool isPressed;
-        private int pressedButtonIndex;
 
         private void Start()
         {
@@ -65,6 +61,24 @@ namespace Rodak.Hexdle
             eyeOpen.SetActive(false);
             flagThin.SetActive(false);
             flagThick.SetActive(false);
+
+            Map.OnInteracted += Map_OnInteracted;
+        }
+
+        private void Map_OnInteracted()
+        {
+            if (!isPressed) return;
+            isPressed = false;
+            if (!isHovered) return;
+            switch (Map.CellInteractionMode)
+            {
+                case CellInteractionMode.Reveal:
+                    TryReveal();
+                    break;
+                case CellInteractionMode.Flag:
+                    TryFlag();
+                    break;
+            }
         }
 
         private void Update()
@@ -76,10 +90,10 @@ namespace Rodak.Hexdle
 
         private void UpdateMouse()
         {
-            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(InputManager.Instance.ReadMapInteractionPosition());
             Hexagon mouseHexagon = HexagonGeometryExtensions.GetHexagonAt(worldPoint.x, worldPoint.y);
 
-            if (mouseHexagon == Cell.Position && !UIUtils.IsPointerOverUI())
+            if (mouseHexagon == Cell.Position && !InputManager.Instance.IsPointerOverUI())
             {
                 isHovered = true;
             }
@@ -88,26 +102,9 @@ namespace Rodak.Hexdle
                 isHovered = false;
             }
 
-            if (isHovered && WasMousePressedThisFrame)
+            if (isHovered && InputManager.Instance.MapInteraction.WasPressedThisFrame())
             {
                 isPressed = true;
-                pressedButtonIndex = Mouse.current.leftButton.isPressed ? 0 : 1;
-            }
-
-            if (isPressed && WasMouseReleasedThisFrame)
-            {
-                isPressed = false;
-                if (isHovered)
-                {
-                    if (pressedButtonIndex == 0)
-                    {
-                        OnClickLeft();
-                    }
-                    else if (pressedButtonIndex == 1)
-                    {
-                        OnClickRight();
-                    }
-                }
             }
         }
 
@@ -119,27 +116,30 @@ namespace Rodak.Hexdle
 
             bool showMid = !Cell.IsRevealed && isPressed && !GameStateManager.State.GuessedRight;
 
+            bool isRevealing = Map.CellInteractionMode == CellInteractionMode.Reveal;
+            bool isFlagging = Map.CellInteractionMode == CellInteractionMode.Flag;
+
             middle.SetActive(showMid);
             if (!Cell.IsFlagged)
             {
-                eyeClosed.SetActive(pressedButtonIndex == 0 && showMid && !isHovered);
-                eyeOpen.SetActive(pressedButtonIndex == 0 && showMid && isHovered);
+                eyeClosed.SetActive(isRevealing && showMid && !isHovered);
+                eyeOpen.SetActive(isRevealing && showMid && isHovered);
             }
 
             if (Cell.IsFlagged)
             {
                 middle.SetActive(true);
-                flagThin.SetActive(pressedButtonIndex == 1 && showMid && isHovered);
-                flagThick.SetActive(pressedButtonIndex == 1 && showMid && !isHovered || !showMid);
+                flagThin.SetActive(isFlagging && showMid && isHovered);
+                flagThick.SetActive(isFlagging && showMid && !isHovered || !showMid);
             }
             else
             {
-                flagThin.SetActive(pressedButtonIndex == 1 && showMid && !isHovered);
-                flagThick.SetActive(pressedButtonIndex == 1 && showMid && isHovered);
+                flagThin.SetActive(isFlagging && showMid && !isHovered);
+                flagThick.SetActive(isFlagging && showMid && isHovered);
             }
         }
 
-        private void OnClickLeft()
+        private void TryReveal()
         {
             if (GameStateManager.State.GuessedRight) return;
             if (Cell.TryReveal())
@@ -148,7 +148,7 @@ namespace Rodak.Hexdle
             }
         }
 
-        private void OnClickRight()
+        private void TryFlag()
         {
             if (GameStateManager.State.GuessedRight) return;
             Cell.ToggleFlag();

@@ -1,19 +1,14 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Rodak.Hexdle
 {
     public class WordUI : MonoBehaviour
     {
+        [Header("UI")]
         [SerializeField] private WordLetterUI wordLetterUIPrefab;
         [SerializeField] private Transform wordLettersContainer;
-
-        [Space]
-        [SerializeField] private float eraseInterval = 0.1f;
-
-        private float eraseTimer;
 
         private readonly List<WordLetterUI> wordLetters = new();
         private int activeLetterCount;
@@ -29,43 +24,42 @@ namespace Rodak.Hexdle
         private void Awake()
         {
             GameManager.Instance.OnGameStarted += GameManager_OnGameStarted;
+            InputManager.Instance.KeyboardInput.OnTyped += KeyboardInput_OnTyped;
+            InputManager.Instance.KeyboardInput.OnEnter += KeyboardInput_OnEnter;
+            InputManager.Instance.KeyboardInput.OnBackspace += KeyboardInput_OnBackspace;
         }
 
-        private void OnEnable()
+        private void KeyboardInput_OnTyped(char letter)
         {
-            Keyboard.current.onTextInput += Keyboard_OnTextInput;
+            if (!SelectedWordLetter.Type(letter)) return;
+
+            if (selectedWordLetterIndex < activeLetterCount - 1)
+            {
+                SelectLetterAt(selectedWordLetterIndex + 1);
+            }
+            else
+            {
+                OnWordTyped?.Invoke(GetWord());
+            }
         }
 
-        private void OnDisable()
+        private void KeyboardInput_OnEnter()
         {
-            Keyboard.current.onTextInput -= Keyboard_OnTextInput;
+            TryGuess();
         }
 
-        private void Update()
+        private void KeyboardInput_OnBackspace()
         {
-            if (Keyboard.current.enterKey.wasPressedThisFrame)
+            if (GameStateManager.State.GuessedRight) return;
+            if (selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter)
             {
-                TryGuess();
+                SelectedWordLetter.Erase();
+                OnWordErased?.Invoke();
             }
-
-            if (Keyboard.current.backspaceKey.isPressed)
+            else if (selectedWordLetterIndex > 0)
             {
-                eraseTimer += Time.deltaTime;
-            }
-
-            if (Keyboard.current.backspaceKey.wasReleasedThisFrame)
-            {
-                eraseTimer = 0;
-            }
-
-            if (Keyboard.current.backspaceKey.wasPressedThisFrame)
-            {
-                Erase();
-            }
-            else if (eraseTimer >= eraseInterval)
-            {
-                eraseTimer -= eraseInterval;
-                Erase();
+                SelectLetterAt(selectedWordLetterIndex - 1);
+                SelectedWordLetter.Erase();
             }
         }
 
@@ -82,20 +76,6 @@ namespace Rodak.Hexdle
             return word;
         }
 
-        private void Erase()
-        {
-            if (GameStateManager.State.GuessedRight) return;
-            if (selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter)
-            {
-                SelectedWordLetter.Erase();
-                OnWordErased?.Invoke();
-            }
-            else if (selectedWordLetterIndex > 0)
-            {
-                SelectLetterAt(selectedWordLetterIndex - 1);
-                SelectedWordLetter.Erase();
-            }
-        }
 
         private void SelectLetterAt(int index)
         {
@@ -136,23 +116,6 @@ namespace Rodak.Hexdle
             SelectedWordLetter.Select();
 
             if (selectedWordLetterIndex == activeLetterCount - 1)
-            {
-                OnWordTyped?.Invoke(GetWord());
-            }
-        }
-
-        private void Keyboard_OnTextInput(char letter)
-        {
-            letter = $"{letter}".ToLower()[0];
-            if (!Words.Letters.Contains(letter)) return;
-
-            if (!SelectedWordLetter.Type(letter)) return;
-
-            if (selectedWordLetterIndex < activeLetterCount - 1)
-            {
-                SelectLetterAt(selectedWordLetterIndex + 1);
-            }
-            else
             {
                 OnWordTyped?.Invoke(GetWord());
             }

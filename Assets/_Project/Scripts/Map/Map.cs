@@ -4,6 +4,7 @@ using Rodak.Hexagons;
 using Rodak.Hexagons.HexGrid;
 using Rodak.Hexagons.HexNavigation;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Rodak.Hexdle
 {
@@ -13,16 +14,54 @@ namespace Rodak.Hexdle
 
         [Header("Map")]
         [SerializeField] private CellBehaviour cellBehaviourPrefab;
+        public CellInteractionMode CellInteractionMode;
 
         private HexagonGrid<Cell> grid;
         private readonly List<char> revealedLetters = new();
 
-        public List<char> RevealedLetters => revealedLetters;
+        private bool didInteract;
+        private CellInteractionMode? nextMode;
 
+        public event Action OnInteracted;
+        public List<char> RevealedLetters => revealedLetters;
 
         private void Awake()
         {
             GameManager.Instance.OnGameStarted += GameManager_OnGameStarted;
+        }
+
+        private void Start()
+        {
+            InputManager.Instance.MapInteractionToggle.started += MapInteractionToggle;
+            InputManager.Instance.MapInteractionToggle.performed += MapInteractionToggle;
+            InputManager.Instance.MapInteractionToggle.canceled += MapInteractionToggle;
+        }
+
+        private void Update()
+        {
+            if (InputManager.Instance.MapInteraction.WasReleasedThisFrame())
+            {
+                OnInteracted?.Invoke();
+                didInteract = false;
+            }
+
+            if (nextMode.HasValue)
+            {
+                CellInteractionMode = nextMode.Value;
+                nextMode = null;
+            }
+        }
+
+        private void MapInteractionToggle(InputAction.CallbackContext ctx)
+        {
+            if (InputManager.Instance.MapInteractionToggle.IsPressed())
+            {
+                nextMode = CellInteractionMode.Flag;
+            }
+            else
+            {
+                nextMode = CellInteractionMode.Reveal;
+            }
         }
 
         private void GameManager_OnGameStarted()
@@ -68,12 +107,8 @@ namespace Rodak.Hexdle
 
                 CellBehaviour cellBehaviour = Instantiate(cellBehaviourPrefab, transform);
                 cellBehaviour.Cell = cell;
+                cellBehaviour.Map = this;
             }
-        }
-
-        private void Update()
-        {
-            // grid.DebugDraw(PlacementPlane.XYPlane, Color.red);
         }
 
         private void Cell_OnRevealed(Cell cell)
