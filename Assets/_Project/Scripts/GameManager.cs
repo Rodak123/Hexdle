@@ -21,7 +21,9 @@ namespace Rodak.Hexdle
             GameStateManager.Load();
 
             string word = GameStateManager.State.Word;
+#if UNITY_EDITOR
             Debug.Log($"{word} -> {Words.WordDefinitions[word]}");
+#endif
         }
 
         private void Start()
