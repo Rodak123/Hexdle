@@ -37,7 +37,8 @@ namespace Rodak.Hexdle
             {
                 SelectLetterAt(selectedWordLetterIndex + 1);
             }
-            else
+
+            if (selectedWordLetterIndex > Words.MIN_WORD_LENGTH - 1)
             {
                 OnWordTyped?.Invoke(GetWord());
             }
@@ -54,12 +55,20 @@ namespace Rodak.Hexdle
             if (selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter)
             {
                 SelectedWordLetter.Erase();
-                OnWordErased?.Invoke();
             }
             else if (selectedWordLetterIndex > 0)
             {
                 SelectLetterAt(selectedWordLetterIndex - 1);
                 SelectedWordLetter.Erase();
+            }
+
+            if (selectedWordLetterIndex > Words.MIN_WORD_LENGTH - 1)
+            {
+                OnWordTyped?.Invoke(GetWord());
+            }
+            else
+            {
+                OnWordErased?.Invoke();
             }
         }
 
@@ -70,10 +79,10 @@ namespace Rodak.Hexdle
             {
                 if (wordLetterUI.IsActive)
                 {
-                    word += wordLetterUI.Letter;
+                    word += wordLetterUI.HasLetter ? wordLetterUI.Letter : "";
                 }
             }
-            return word;
+            return word.Trim();
         }
 
 
@@ -94,7 +103,7 @@ namespace Rodak.Hexdle
             activeLetterCount = GameStateManager.State.Word.Length;
             for (int i = 0; i < Words.MAX_WORD_LENGTH; i++)
             {
-                bool isActive = i < activeLetterCount;
+                bool isActive = true;  //i < activeLetterCount;
 
                 WordLetterUI wordLetterUI = Instantiate(wordLetterUIPrefab, wordLettersContainer);
                 wordLetters.Add(wordLetterUI);
@@ -115,7 +124,7 @@ namespace Rodak.Hexdle
             }
             SelectedWordLetter.Select();
 
-            if (selectedWordLetterIndex == activeLetterCount - 1)
+            if (selectedWordLetterIndex > Words.MIN_WORD_LENGTH - 1)
             {
                 OnWordTyped?.Invoke(GetWord());
             }

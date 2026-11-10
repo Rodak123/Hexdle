@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Rodak.Utils.Singleton;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,6 +14,8 @@ namespace Rodak.Hexdle
 
         public event Action OnGuessedWrong;
         public event Action OnGuessedRight;
+
+        public int LuckyNumber { get; private set; }
 
         protected override void Awake()
         {
@@ -43,6 +46,8 @@ namespace Rodak.Hexdle
 
         private void StartGame()
         {
+            LuckyNumber = Words.PickLuckyNumber(GameStateManager.State.Word, GameStateManager.Random);
+
             OnGameStarted?.Invoke();
         }
 

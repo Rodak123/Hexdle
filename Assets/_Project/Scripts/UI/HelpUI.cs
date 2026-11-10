@@ -73,6 +73,9 @@ namespace Rodak.Hexdle
             else
             {
                 bodyText.text = "Not defined";
+                submitTextColor.SetIsInverted(false);
+                submitBgImageColor.SetIsInverted(true);
+                submitButton.interactable = false;
             }
         }
 

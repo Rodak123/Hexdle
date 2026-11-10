@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Rodak.Hexdle
 {
     public static class Words
     {
+        public const int MIN_WORD_LENGTH = 5;
         public const int MAX_WORD_LENGTH = 6;
         public static readonly List<char> Letters = new("abcdefghijklmnopqrstuvwxyz".ToCharArray());
 
@@ -1948,5 +1950,107 @@ namespace Rodak.Hexdle
                 return new List<string>(WordDefinitions.Keys)[index];
             }
         }
+
+        public static int PickLuckyNumber(string word, System.Random random)
+        {
+            List<int>[] digits = new List<int>[] { new(), new(), };
+
+            for (int n = 10; n < 90; n++)
+            {
+                string number = $"{n}";
+                for (int i = 0; i < digits.Length; i++)
+                {
+                    int digit = int.Parse($"{number[i]}");
+                    digits[i].Add(digit);
+                }
+            }
+
+            // First Rule - There are repeating letters = ODD
+            bool hasRepeatingLetters = false;
+            for (int i = 0; i < word.Length; i++)
+            {
+                for (int j = 0; j < word.Length; j++)
+                {
+                    if (i == j) continue;
+                    if (word[i] == word[j])
+                    {
+                        hasRepeatingLetters = true;
+                        break;
+                    }
+                }
+
+                if (hasRepeatingLetters)
+                {
+                    break;
+                }
+            }
+
+            for (int i = digits[1].Count - 1; i >= 0; i--)
+            {
+                bool isEven = digits[1][i] % 2 == 0;
+                if (hasRepeatingLetters == isEven)
+                {
+                    digits[1].RemoveAt(i);
+                }
+            }
+
+            // Second Rule - Starts with first half of alphabet(A - O) = LESS THAN 40
+            int startLetterIndex = Words.Letters.IndexOf(word[0]);
+            bool startsWithFirstHalf = startLetterIndex <= Words.Letters.Count / 2;
+            for (int i = digits[0].Count - 1; i >= 0; i--)
+            {
+                bool lessThan40 = digits[0][i] <= 4;
+                if (startsWithFirstHalf == !lessThan40)
+                {
+                    digits[0].RemoveAt(i);
+                }
+            }
+
+            // Third Rule - The word has 5 letters = SECOND DIGIT BELOW OR EQUAL 5
+            bool wordHas5Letters = word.Length == 5;
+            for (int i = digits[1].Count - 1; i >= 0; i--)
+            {
+                bool lessThan5 = digits[1][i] <= 5;
+                if (wordHas5Letters == !lessThan5)
+                {
+                    digits[1].RemoveAt(i);
+                }
+            }
+
+            // Fourth Rule - Ends with a vowel(A, E, I, O, U, Y) = FIRST DIGIT IS PRIME NUMBER
+            List<char> vowels = new() { 'a', 'e', 'i', 'o', 'u', 'y' };
+            List<int> primes = new() { 2, 3, 5, 7 };
+            bool endsWithVowel = vowels.Contains(word[^1]);
+            for (int i = digits[0].Count - 1; i >= 0; i--)
+            {
+                bool isPrime = primes.Contains(digits[0][i]);
+                if (endsWithVowel == !isPrime)
+                {
+                    digits[0].RemoveAt(i);
+                }
+            }
+
+            // Create the number
+            int luckyNumber = 0;
+            for (int i = 0; i < digits.Length; i++)
+            {
+                int optionCount = digits[i].Count;
+                if (optionCount == 0)
+                {
+                    Debug.LogError($"No digit[{i}] left for word: '{word}'");
+                    continue;
+                }
+
+                int pickedDigit = digits[i][0];
+                if (optionCount > 1)
+                {
+                    pickedDigit = digits[i][random.Next(0, optionCount - 1)];
+                }
+                luckyNumber += pickedDigit * (int)Mathf.Pow(10, digits.Length - 1 - i);
+            }
+
+            return luckyNumber;
+        }
+
     }
 }
