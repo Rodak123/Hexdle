@@ -17,6 +17,7 @@ namespace Rodak.Hexdle
         public readonly Hexagon Position;
         public char Letter => letter.HasValue ? letter.Value : '*';
         public bool HasLetter => letter != null;
+        public bool IsAWall => Position == Hexagon.Zero;
 
         public int DangerLevel => dangerLevel;
         public bool IsRevealed

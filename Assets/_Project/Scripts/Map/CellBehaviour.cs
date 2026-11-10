@@ -33,6 +33,9 @@ namespace Rodak.Hexdle
         [SerializeField] private GameObject flagThin;
         [SerializeField] private GameObject flagThick;
 
+        [Space]
+        [SerializeField] private GameObject wall;
+
         private bool isHovered;
         private bool isPressed;
 
@@ -61,12 +64,14 @@ namespace Rodak.Hexdle
             eyeOpen.SetActive(false);
             flagThin.SetActive(false);
             flagThick.SetActive(false);
+            wall.SetActive(false);
 
             Map.OnInteracted += Map_OnInteracted;
         }
 
         private void Map_OnInteracted()
         {
+            if (Cell.IsAWall) return;
             if (!isPressed) return;
             isPressed = false;
             if (!isHovered) return;
@@ -110,6 +115,8 @@ namespace Rodak.Hexdle
 
         private void UpdateUI()
         {
+            wall.SetActive(Cell.IsAWall);
+
             cover.SetActive(!Cell.IsRevealed);
             outline.SetActive(isHovered);
             danger.SetActive(Cell.IsRevealed && Cell.IsInsideWord);

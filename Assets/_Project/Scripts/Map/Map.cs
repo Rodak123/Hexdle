@@ -74,7 +74,11 @@ namespace Rodak.Hexdle
             grid = new(mapSize, (hexagon) => new(hexagon));
 
             List<Hexagon> letterPositions = new(grid.Hexagons);
-
+            for (int i = letterPositions.Count - 1; i >= 0; i--)
+            {
+                if (!grid[letterPositions[i]].IsAWall) continue;
+                letterPositions.RemoveAt(i);
+            }
             for (int n = 0; n < Words.Letters.Count - 1; n++)
             {
                 int k = GameStateManager.Random.Next(0, n + 1);
@@ -85,7 +89,8 @@ namespace Rodak.Hexdle
 
             for (int i = 0; i < Words.Letters.Count; i++)
             {
-                grid[letterPositions[i]].SetLetter(Words.Letters[i]);
+                Cell cell = grid[letterPositions[i]];
+                cell.SetLetter(Words.Letters[i]);
             }
 
             List<Hexagon> gridHexagons = new(grid.Hexagons);
