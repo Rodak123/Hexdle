@@ -17,13 +17,12 @@ namespace Rodak.Hexdle
         public CellInteractionMode CellInteractionMode;
 
         private HexagonGrid<Cell> grid;
-        private readonly List<char> revealedLetters = new();
+        private readonly HashSet<char> revealedLetters = new();
 
-        private bool didInteract;
         private CellInteractionMode? nextMode;
 
         public event Action OnInteracted;
-        public List<char> RevealedLetters => revealedLetters;
+        public HashSet<char> RevealedLetters => revealedLetters;
 
         private void Awake()
         {
@@ -42,7 +41,6 @@ namespace Rodak.Hexdle
             if (InputManager.Instance.MapInteraction.WasReleasedThisFrame())
             {
                 OnInteracted?.Invoke();
-                didInteract = false;
             }
 
             if (nextMode.HasValue)
@@ -113,6 +111,11 @@ namespace Rodak.Hexdle
                 CellBehaviour cellBehaviour = Instantiate(cellBehaviourPrefab, transform);
                 cellBehaviour.Cell = cell;
                 cellBehaviour.Map = this;
+
+                if (cell.IsRevealed)
+                {
+                    revealedLetters.Add(cell.Letter);
+                }
             }
         }
 
