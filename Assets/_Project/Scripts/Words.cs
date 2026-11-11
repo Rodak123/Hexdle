@@ -1995,11 +1995,11 @@ namespace Rodak.Hexdle
             }
 
             // Second Rule - Starts with first half of alphabet(A - O) = LESS THAN 40
-            int startLetterIndex = Words.Letters.IndexOf(word[0]);
-            bool startsWithFirstHalf = startLetterIndex <= Words.Letters.Count / 2;
+            int startLetterIndex = Letters.IndexOf(word[0]);
+            bool startsWithFirstHalf = startLetterIndex < Letters.Count / 2;
             for (int i = digits[0].Count - 1; i >= 0; i--)
             {
-                bool lessThan40 = digits[0][i] <= 4;
+                bool lessThan40 = digits[0][i] < 4;
                 if (startsWithFirstHalf == !lessThan40)
                 {
                     digits[0].RemoveAt(i);
