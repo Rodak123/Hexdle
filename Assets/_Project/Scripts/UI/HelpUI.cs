@@ -57,7 +57,7 @@ namespace Rodak.Hexdle
 
                 if (alreadyGuessed)
                 {
-                    bodyText.text = "Word already guessed.";
+                    bodyText.text = "Not quite! Try a different SPELL!";
                     submitTextColor.SetIsInverted(false);
                     submitBgImageColor.SetIsInverted(true);
                     submitButton.interactable = false;
