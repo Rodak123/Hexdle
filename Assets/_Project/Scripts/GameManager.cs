@@ -71,6 +71,8 @@ namespace Rodak.Hexdle
 
         public void GuessWord(string word)
         {
+            if (GameStateManager.State.WrongGuesses.Contains(word)) return;
+
             if (word == GameStateManager.State.Word)
             {
                 GameStateManager.State.GuessedRight = true;

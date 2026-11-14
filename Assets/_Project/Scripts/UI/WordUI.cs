@@ -11,12 +11,11 @@ namespace Rodak.Hexdle
         [SerializeField] private Transform wordLettersContainer;
 
         private readonly List<WordLetterUI> wordLetters = new();
-        private int activeLetterCount;
 
         private int selectedWordLetterIndex;
         private WordLetterUI SelectedWordLetter => wordLetters[selectedWordLetterIndex];
 
-        public bool ReadyToGuess => selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter && Words.WordDefinitions.ContainsKey(GetWord());
+        public bool ReadyToGuess => Words.WordDefinitions.ContainsKey(GetWord());
 
         public event Action<string> OnWordTyped;
         public event Action OnWordErased;
@@ -33,7 +32,7 @@ namespace Rodak.Hexdle
         {
             if (!SelectedWordLetter.Type(letter)) return;
 
-            if (selectedWordLetterIndex < activeLetterCount - 1)
+            if (selectedWordLetterIndex < Words.MIN_WORD_LENGTH)
             {
                 SelectLetterAt(selectedWordLetterIndex + 1);
             }
@@ -52,7 +51,7 @@ namespace Rodak.Hexdle
         private void KeyboardInput_OnBackspace()
         {
             if (GameStateManager.State.GuessedRight) return;
-            if (selectedWordLetterIndex == activeLetterCount - 1 && SelectedWordLetter.HasLetter)
+            if (selectedWordLetterIndex == Words.MAX_WORD_LENGTH - 1 && SelectedWordLetter.HasLetter)
             {
                 SelectedWordLetter.Erase();
             }
@@ -100,7 +99,6 @@ namespace Rodak.Hexdle
                 Destroy(child.gameObject);
             }
 
-            activeLetterCount = GameStateManager.State.Word.Length;
             for (int i = 0; i < Words.MAX_WORD_LENGTH; i++)
             {
                 bool isActive = true;  //i < activeLetterCount;
@@ -112,7 +110,7 @@ namespace Rodak.Hexdle
                 wordLetterUI.IsActive = isActive;
             }
 
-            selectedWordLetterIndex = activeLetterCount - 1;
+            selectedWordLetterIndex = Words.MAX_WORD_LENGTH - 1;
             for (int i = 0; i < wordLetters.Count; i++)
             {
                 if (wordLetters[i].HasLetter)

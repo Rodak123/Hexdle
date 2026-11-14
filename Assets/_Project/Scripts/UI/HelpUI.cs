@@ -28,6 +28,13 @@ namespace Rodak.Hexdle
             wordUI.OnWordTyped += WordUI_OnWordTyped;
             wordUI.OnWordErased += WordUI_OnWordErased;
             submitButton.onClick.AddListener(Button_OnClick);
+
+            GameManager.Instance.OnGuessedWrong += GameManager_OnGuessedWrong;
+        }
+
+        private void GameManager_OnGuessedWrong()
+        {
+            WordUI_OnWordTyped(titleText.text);
         }
 
         private void Update()
