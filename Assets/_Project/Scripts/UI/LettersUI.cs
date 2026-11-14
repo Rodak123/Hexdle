@@ -17,7 +17,6 @@ namespace Rodak.Hexdle
                 char letter = Words.Letters[i];
                 LetterUI letterUI = Instantiate(letterPrefab, lettersContainer);
                 letterUI.Letter = letter;
-                letterUI.Map = map;
 
                 if (i == Words.Letters.Count / 2 - 1)
                 {

@@ -61,7 +61,7 @@ namespace Rodak.Hexdle
 
         public bool Type(char letter)
         {
-            if (HasLetter) return false;
+            if (HasLetter || GameManager.Instance.GetLetterStatus(letter) == GameManager.LetterStatus.Missing) return false;
             State.Letter = $"{letter}";
             GameStateManager.Save();
             return true;

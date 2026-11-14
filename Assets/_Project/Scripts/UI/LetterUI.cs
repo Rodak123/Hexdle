@@ -6,7 +6,6 @@ namespace Rodak.Hexdle
     public class LetterUI : MonoBehaviour
     {
         public char Letter = 'a';
-        public Map Map;
 
         [Header("UI")]
         [SerializeField] private TMP_Text letterText;
@@ -23,19 +22,17 @@ namespace Rodak.Hexdle
 
         private void Update()
         {
-            if (!Map.RevealedLetters.Contains(Letter))
+            switch (GameManager.Instance.GetLetterStatus(Letter))
             {
-                return;
-            }
-
-            if (GameStateManager.State.Word.Contains(Letter))
-            {
-                letterTextColor.SetIsInverted(true);
-                bgColor.SetIsInverted(false);
-            }
-            else
-            {
-                strike.SetActive(true);
+                case GameManager.LetterStatus.Hidden:
+                    return;
+                case GameManager.LetterStatus.Missing:
+                    strike.SetActive(true);
+                    break;
+                case GameManager.LetterStatus.Included:
+                    letterTextColor.SetIsInverted(true);
+                    bgColor.SetIsInverted(false);
+                    break;
             }
         }
     }

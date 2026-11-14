@@ -20,6 +20,9 @@ namespace Rodak.Hexdle
         public event Action OnBackspace;
         public event Action OnEnter;
 
+        public Key Key => key;
+        public char KeyChar => key.ToString().ToLower()[0];
+
         private void Awake()
         {
             keyText.gameObject.SetActive(false);
@@ -55,7 +58,7 @@ namespace Rodak.Hexdle
             }
             else
             {
-                OnTyped?.Invoke(key.ToString()[0]);
+                OnTyped?.Invoke(KeyChar);
             }
         }
     }

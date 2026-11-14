@@ -9,6 +9,8 @@ namespace Rodak.Hexdle
 {
     public class GameManager : SingletonMonoBehaviour<GameManager>
     {
+        private readonly HashSet<char> revealedLetters = new();
+
         public event Action OnGameStarted;
         public event Action OnPenaltyGained;
 
@@ -16,6 +18,8 @@ namespace Rodak.Hexdle
         public event Action OnGuessedRight;
 
         public int LuckyNumber { get; private set; }
+
+        public HashSet<char> RevealedLetters => revealedLetters;
 
         protected override void Awake()
         {
@@ -87,6 +91,35 @@ namespace Rodak.Hexdle
             GameStateManager.State.Penalty += GetPenaltyAmount(penaltyType);
             GameStateManager.Save();
             OnPenaltyGained?.Invoke();
+        }
+
+        public void RevealLetter(char letter)
+        {
+            revealedLetters.Add(letter);
+        }
+
+        public LetterStatus GetLetterStatus(char letter)
+        {
+            if (!RevealedLetters.Contains(letter))
+            {
+                return LetterStatus.Hidden;
+            }
+
+            if (GameStateManager.State.Word.Contains(letter))
+            {
+                return LetterStatus.Included;
+            }
+            else
+            {
+                return LetterStatus.Missing;
+            }
+        }
+
+        public enum LetterStatus
+        {
+            Hidden,
+            Missing,
+            Included
         }
 
         public enum PenaltyType

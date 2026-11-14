@@ -17,12 +17,10 @@ namespace Rodak.Hexdle
         public CellInteractionMode CellInteractionMode;
 
         private HexagonGrid<Cell> grid;
-        private readonly HashSet<char> revealedLetters = new();
 
         private CellInteractionMode? nextMode;
 
         public event Action OnInteracted;
-        public HashSet<char> RevealedLetters => revealedLetters;
 
         private void Awake()
         {
@@ -114,7 +112,7 @@ namespace Rodak.Hexdle
 
                 if (cell.IsRevealed)
                 {
-                    revealedLetters.Add(cell.Letter);
+                    GameManager.Instance.RevealLetter(cell.Letter);
                 }
             }
         }
@@ -123,7 +121,7 @@ namespace Rodak.Hexdle
         {
             if (cell.HasLetter)
             {
-                revealedLetters.Add(cell.Letter);
+                GameManager.Instance.RevealLetter(cell.Letter);
             }
 
             if (cell.IsInsideWord)
