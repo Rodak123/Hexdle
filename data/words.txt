@@ -231,7 +231,7 @@ months;Months are units of time, conventionally used with calendars, which are a
 safety;Safety is the condition of being protected from danger, risk, or injury.;111064464
 trade;Trade is the activity of buying, selling, or exchanging goods and services.;110086585
 having;Having is the present participle of the verb 'to have'.;109360096
-david;David was the second king of the United Kingdom of Israel and Judah, according to the Hebrew Bible.;109067044
+david;David refers to the famous statue created by Michelangelo, depicting the biblical hero David.;109067044
 green;Green is a color between blue and yellow in the visible spectrum.;108287905
 close;Close means to move something so that it blocks an opening.;107853068
 common;Common refers to something shared by, coming from, or done by two or more people or things.;107839275
@@ -611,7 +611,6 @@ stone;Stone is a naturally occurring solid aggregate of minerals.;42494931
 tests;Tests are procedures for measuring the quality, ability, or reliability of something.;42336117
 coffee;Coffee is a brewed drink prepared from roasted coffee beans.;42086828
 buyer;A buyer is a person or entity that purchases goods or services.;42024703
-steve;Steve Jobs was the co-founder and former CEO of Apple Inc.;41997245
 easily;Easily means without difficulty or effort.;41949287
 poster;A poster is a large printed image or notice, typically displayed in a public place for advertising or information purposes.;41893537
 closed;Closed means not open or accessible;41782645
@@ -688,7 +687,7 @@ latin;Latin is an ancient Italic language originally spoken in the area around R
 avoid;To avoid means to keep away from or stop oneself from doing something.;36508203
 manage;Manage means to be in charge of or administer a business, organization, or group of people.;36439435
 corner;A corner is the point or area where two lines, surfaces, or edges meet.;36419737
-oregon;Oregon was the 33rd state admitted to the Union on February 14, 1859.;36353838
+oregon;Oregon is known for its diverse landscape including mountains, forests, and Pacific coastline.;36353838
 birth;Birth is the emergence of a baby or other young from the body of its mother.;36286070
 virus;A virus is a submicroscopic infectious agent that replicates only inside the living cells of an organism.;36286003
 abuse;Abuse is the improper use or treatment of something or someone, often to gain benefit or advantage.;36269685
@@ -818,11 +817,9 @@ austin;Austin is the capital city of Texas, United States.;30477225
 andrew;Andrew refers to one of the twelve apostles of Jesus Christ in Christian tradition.;30403300
 assets;Assets are economic resources owned by an individual, company, or country that have value and can be converted into cash.;30302586
 injury;An injury is physical harm or damage to a person's body, often caused by accidents or violence.;30291773
-joseph;Joseph was an important figure in the Bible, known for his coat of many colors and his ability to interpret dreams.;30285903
 lawyer;A lawyer is a person who practices or studies law; an attorney or a counselor.;30253229
 portal;A portal is a doorway, gate, or other entrance, especially a large and imposing one.;30171660
 gratis;Gratis means given or done free of charge; without payment.;30144426
-brian;Brian Boru was an Irish king who became High King of Ireland in the early 11th century.;30060564
 toward;Toward is a preposition indicating movement or direction in the direction of something.;30024561
 assist;To assist means to help or aid someone in accomplishing a task or goal.;29963782
 miami;Miami is a major city located in southeastern Florida, United States.;29904805
@@ -834,7 +831,6 @@ minor;Minor refers to a person under the legal age of full responsibility.;29782
 finish;Finish is the final part or stage of something.;29769825
 noted;Noted means well-known or famous.;29754565
 spent;Spent is the past tense and past participle of spend, meaning to use up or pay out money, time, or resources.;29719451
-daniel;Daniel was a prophet in the Hebrew Bible and the protagonist of the Book of Daniel.;29680403
 helps;Helps is the third-person singular form of the verb 'to help', meaning to make it easier or possible for someone to do something by offering them one's services or resources.;29607993
 cycle;A cycle is a series of events that regularly repeats in the same order.;29585286
 sleep;Sleep is a naturally recurring state of altered consciousness and reduced physical activity in animals.;29491537
@@ -1063,7 +1059,6 @@ taiwan;Taiwan is an island nation located in East Asia, officially known as the 
 chosen;Chosen refers to someone or something that has been selected or picked for a particular purpose or role.;21345654
 greece;Greece is known as the birthplace of Western civilization, democracy, and the Olympic Games.;21329720
 swiss;Swiss refers to something or someone from or related to Switzerland.;21324437
-sarah;Sarah was the wife of Abraham and mother of Isaac in the Hebrew Bible and the Quran.;21321998
 labour;Labour is the British spelling of 'labor'.;21288089
 nights;Nights are periods of darkness between sunset and sunrise.;21258662
 behalf;Behalf is a term meaning in the interest of or as a representative of someone or something.;21247820
@@ -1494,7 +1489,6 @@ saudi;Saudi refers to something or someone from Saudi Arabia, a country in Weste
 fault;A fault is a fracture or zone of fractures between two blocks of rock.;13112664
 babies;Babies are very young children, typically referring to infants under one year of age.;13070103
 karen;Karen has become a slang term used to describe a stereotypical entitled, demanding, or aggressive middle-aged white woman.;13067717
-albert;Albert Einstein was a renowned theoretical physicist who developed the theory of relativity.;13040324
 jimmy;Jimmy can refer to a short crowbar used for prying.;13030009
 graham;Graham Land is a portion of the Antarctic Peninsula.;13026222
 slowly;Slowly means at a slow speed or pace, taking a long time to complete an action or process.;13000552
@@ -1510,7 +1504,7 @@ warren;Warren refers to a network of interconnecting rabbit burrows.;12887808
 devil;The Devil is a supernatural entity in various religions, typically associated with evil and temptation.;12869511
 grass;GRASS (Geographic Resources Analysis Support System) is an open-source Geographic Information System (GIS) software used for geospatial data management and analysis, image processing, graphics and map production, spatial modeling, and visualization.;12868953
 comply;To comply means to act in accordance with a wish, request, demand, or regulation.;12868396
-marie;Marie Curie was a Polish-French physicist and chemist who conducted pioneering research on radioactivity.;12862466
+marie;Marie is a character in the ballet 'The Nutcracker'.;12862466
 cherry;Cherry is a small, round stone fruit that is typically red or black in color.;12855670
 kenya;Kenya has a population of approximately 54 million people as of 2021.;12839981
 quebec;Quebec is a province in eastern Canada, known for its French-speaking majority and distinct culture.;12807746
@@ -1531,7 +1525,7 @@ wisdom;Wisdom is the quality of having experience, knowledge, and good judgment.
 shoot;Shoot means to fire a gun or other weapon.;12695618
 offset;Offset is a counterbalance or compensation for something else.;12689932
 payday;Payday is the day on which an employee receives their salary or wages.;12682146
-philip;Philip II of Macedon was the father of Alexander the Great.;12674163
+philip;Philip the Apostle was one of the Twelve Apostles of Jesus in the New Testament.;12674163
 elite;Elite refers to a select group or class of people with superior status, skills, or qualities.;12673836
 poems;Poems are literary compositions written in verse, typically characterized by the use of rhythm, imagery, and figurative language to evoke emotions or ideas.;12662561
 robot;A robot is a machine capable of carrying out complex actions automatically, especially one programmable by a computer.;12656312
@@ -1610,7 +1604,6 @@ framed;Framed means enclosed in a border or case.;11770634
 aside;An aside is a remark or passage in a play that is intended to be heard by the audience but not by other characters on stage.;11768649
 essay;An essay is a short piece of writing on a particular subject, often expressing personal opinions.;11750312
 camps;Camps are temporary places with accommodation and other facilities for a group of people, such as soldiers, refugees, or vacationers.;11712039
-aaron;Aaron was the brother of Moses and first high priest of the Israelites in the Bible.;11698784
 trace;Trace is a small amount or barely discernible quantity of something.;11697252
 packs;Packs are groups of animals, especially wolves, jackals, or dogs, that hunt or live together.;11683277
 inform;Inform is a verb meaning to give someone facts or information.;11637681
@@ -1795,7 +1788,7 @@ approx;Approx is an abbreviation for 'approximately', meaning roughly or about.;
 arabic;Arabic is a Semitic language spoken in various dialects by people in the Middle East and North Africa.;9954108
 gauge;A gauge is an instrument or device for measuring the magnitude, amount, or contents of something.;9952466
 faced;Faced means having a face or surface of a specified kind or number.;9938155
-rachel;Rachel was a biblical figure, the favorite wife of Jacob and mother of Joseph and Benjamin.;9937223
+rachel;Rachel is a character in the TV show 'Friends', portrayed by Jennifer Aniston.;9937223
 chains;Chains are series of connected or related events, people, or things.;9922983
 sixth;Sixth is the ordinal number corresponding to six.;9920054
 engage;To engage means to occupy, attract, or involve someone's interest or attention.;9919952
@@ -1842,7 +1835,6 @@ toilet;A toilet is a plumbing fixture used for defecation and urination.;9622554
 ranked;Ranked means arranged or rated according to a particular order or hierarchy.;9621386
 routes;Routes are paths or ways taken in getting from a starting point to a destination.;9615627
 packed;Packed refers to something that has been filled tightly or densely with contents.;9614167
-helen;Helen of Troy was a figure from Greek mythology, considered the most beautiful woman in the world.;9600641
 timely;Timely means occurring at a suitable or opportune time.;9583522
 talked;Talked is the past tense and past participle of the verb 'talk'.;9582713
 debug;Debug is a verb meaning to identify and remove errors from computer hardware or software.;9581095
@@ -1884,7 +1876,7 @@ sacred;Sacred refers to something that is regarded with great respect and revere
 chrome;Chrome is a shiny, silvery-white metal that is resistant to corrosion.;9329259
 tommy;Tommy is a slang term for a British soldier, particularly used during World War I.;9327874
 brake;A brake is a device used to slow or stop the motion of a wheel or vehicle.;9321885
-oliver;Oliver Cromwell was an English military and political leader who served as Lord Protector of the Commonwealth of England, Scotland, and Ireland from 1653 to 1658.;9312468
+oliver;Oliver Twist is the title character and protagonist of Charles Dickens' novel 'Oliver Twist'.;9312468
 congo;Congo is a major river in Africa, the second-longest after the Nile.;9310976
 delays;Delays are periods of time by which something is late or postponed.;9301670
 olive;An olive is a small, oval fruit with a hard pit, typically green or black in color, used for food or oil production.;9298184
@@ -1947,7 +1939,7 @@ paste;Paste is a soft, wet mixture of ingredients, often used in cooking or as a
 clouds;Clouds are visible masses of water droplets or ice crystals suspended in the atmosphere.;8913052
 easter;Easter is a Christian holiday celebrating the resurrection of Jesus Christ.;8899534
 praise;Praise is the act of expressing approval or admiration for someone or something.;8892149
-jeremy;Jeremy Bentham was an influential English philosopher and social reformer known for his utilitarian ethics.;8892076
+jeremy;Jeremy Corbyn is a British politician who served as Leader of the Labour Party and Leader of the Opposition from 2015 to 2020.;8892076
 venice;Venice was historically an independent republic and major maritime power known as the Most Serene Republic of Venice.;8890952
 relax;Relax means to make or become less tense or anxious.;8856944
 hardly;Hardly is an adverb meaning scarcely or barely.;8845763
@@ -2003,7 +1995,7 @@ flame;Flame is the visible, gaseous part of a fire.;8527495
 tanks;Tanks are large, armored combat vehicles designed for front-line fighting.;8526525
 spell;Spell is a verbal formula or series of words believed to have magical powers.;8506049
 kuwait;Kuwait is known for its oil reserves and high-income economy.;8500528
-emily;Emily Dickinson was a prominent American poet who lived from 1830 to 1886.;8497262
+emily;Emily is one of the main characters in the TV series 'Pretty Little Liars'.;8497262
 struck;Struck is the past tense and past participle of the verb 'strike'.;8489716
 bridal;Bridal refers to a bride or a wedding ceremony.;8466303
 annex;Annex is a verb meaning to add or attach as an extra or subordinate part.;8465905
@@ -2028,7 +2020,7 @@ arise;Arise means to get up from a lying or sitting position.;8337093
 celtic;Celtic refers to the cultures, languages, and peoples historically associated with the Celts of ancient Europe.;8333967
 advise;Advise means to offer suggestions about the best course of action to someone.;8325087
 boxing;Boxing is a combat sport in which two people, usually wearing protective gloves, throw punches at each other for a predetermined amount of time in a boxing ring.;8319372
-hughes;Hughes Aircraft Company was a major American aerospace and defense contractor founded by Howard Hughes in 1932.;8306299
+hughes;Hughes Syndrome, also known as antiphospholipid syndrome, is an autoimmune disorder that causes blood clots to form in various parts of the body.;8306299
 bitch;Bitch is a female dog, wolf, fox, or otter.;8302447
 chess;Chess is a strategy board game played between two players on a checkered board with 64 squares.;8293823
 menus;Menus are lists of dishes available in a restaurant or for a meal.;8283476
@@ -2132,7 +2124,6 @@ fallen;Fallen means having dropped or come down from a higher position.;7714660
 sussex;Sussex is a historic county in South East England.;7713059
 gather;Gather is a verb meaning to bring together or collect.;7692892
 backed;Backed means supported, especially financially or morally.;7688105
-alfred;Alfred the Great was the King of Wessex from 871 to 899, known for his defense of Anglo-Saxon kingdoms against Viking invasions.;7683998
 carey;Carey, Ohio is a village in Wyandot County, Ohio, United States.;7679924
 motels;Motels are lodging establishments typically designed for motorists, often with rooms directly accessible from a parking area.;7671328
 slight;Slight means small in amount, degree, or importance.;7664301
@@ -2145,7 +2136,6 @@ patio;A patio is an outdoor living space typically adjacent to a residence, ofte
 optics;Optics is the branch of physics dealing with the behavior and properties of light.;7616886
 pursue;Pursue means to follow or chase someone or something, typically with the intent to catch or obtain.;7615784
 beans;Beans are edible seeds from plants in the family Fabaceae.;7607524
-ellis;Ellis Island was the gateway for millions of immigrants to the United States from 1892 to 1954.;7607078
 snake;A snake is a long, legless reptile of the suborder Serpentes, characterized by a scaly body and forked tongue.;7606395
 nipple;A nipple is the small, protruding part at the center of the breast through which milk is secreted.;7595055
 plains;Plains are large areas of flat land with few trees.;7584638
@@ -2184,7 +2174,6 @@ watts;Watts is a district in Los Angeles, California, known for the Watts Towers
 forty;Forty is the number following thirty-nine and preceding forty-one.;7415064
 tubes;Tubes are hollow cylindrical structures used for various purposes, such as conveying fluids or protecting electrical wires.;7413309
 priest;A Priest is a person who performs religious ceremonies and duties in a church.;7401793
-ronald;Ronald Reagan was the 40th President of the United States, serving from 1981 to 1989.;7400733
 queue;A queue is a line or sequence of people or vehicles awaiting their turn to be attended to or to proceed.;7398569
 trance;In music, trance is a genre of electronic dance music characterized by hypnotic rhythms and repetitive melodies.;7392026
 locale;Locale is the setting or location where something takes place.;7391821
@@ -2216,7 +2205,6 @@ buried;Buried means placed in the ground and covered with earth, as in a funeral
 darwin;Darwin is the capital city of the Northern Territory, Australia.;7222807
 ranks;Ranks are the positions or grades in an ordered scale of status or achievement.;7222499
 debut;A debut is the first public appearance or performance of a person or thing.;7220643
-milton;John Milton was an English poet, polemicist, and civil servant, best known for his epic poem 'Paradise Lost'.;7192953
 marker;A marker is an object used to indicate a position, place, or route.;7192496
 monaco;Monaco is a sovereign city-state and microstate on the French Riviera, bordered by France on three sides and the Mediterranean Sea.;7185303
 belize;Belize has a population of approximately 400,000 people.;7170798
@@ -2244,7 +2232,7 @@ disco;Disco is a genre of dance music that emerged in the 1970s.;7067687
 bailey;A bailey is the outer wall of a castle or the courtyard enclosed by it.;7064210
 metric;Metric refers to the decimal system of measurement used in most countries worldwide.;7027911
 minus;Minus is a mathematical symbol (-) used to represent subtraction or negative numbers.;7025364
-joshua;Joshua was a biblical figure who led the Israelites into the Promised Land after the death of Moses.;7018211
+joshua;The Book of Joshua is the sixth book in the Old Testament of the Bible.;7018211
 varied;Varied means diverse or having different forms or types.;7013799
 grande;Grande is a Spanish and Italian word meaning 'large' or 'great'.;7012300
 assign;To assign is to allocate or designate a specific task, duty, or resource to someone.;7007787
@@ -2258,7 +2246,6 @@ chorus;A chorus is a group of singers performing together in a musical or theatr
 rhythm;Rhythm is a strong, regular pattern of movement or sound.;6993833
 digit;A digit is a single numeral from 0 to 9 used to represent numbers in a positional numeral system.;6991045
 argued;Argued is the past tense and past participle of argue, meaning to give reasons for or against something.;6989831
-clarke;Arthur C. Clarke was a British science fiction writer, science writer, and futurist.;6987535
 sudden;Sudden means occurring or done quickly and unexpectedly.;6982423
 lions;Lions are large feline predators native to Africa and parts of Asia.;6980244
 pools;Pools are bodies of standing water, either natural or artificial.;6977605
@@ -2295,7 +2282,6 @@ holly;Holly is a genus of evergreen shrubs and trees in the family Aquifoliaceae
 silly;Silly means having or showing a lack of common sense or judgment; absurd and foolish.;6833654
 mercy;Mercy is compassion or forgiveness shown toward someone whom it is within one's power to punish or harm.;6831149
 freely;Freely means without restraint or restriction.;6826769
-marcus;Marcus Aurelius was a Roman emperor and Stoic philosopher who ruled from 161 to 180 AD.;6825770
 fence;A fence is a structure that encloses an area, typically outdoors, and is usually constructed from posts connected by boards, wire, rails or netting.;6796605
 nudist;A nudist is a person who practices or advocates nudism, the practice of going naked in designated areas.;6796558
 diana;Diana is the Roman goddess of the hunt, the moon, and nature, associated with wild animals and woodland.;6795021
@@ -2306,7 +2292,6 @@ genius;Genius refers to exceptional intellectual or creative power or other natu
 flesh;Flesh is the soft substance consisting of muscle and fat found between the skin and bones of animals or humans.;6768724
 barely;Barely means only just; by a small margin.;6764292
 marble;Marble is a metamorphic rock composed of recrystallized carbonate minerals, most commonly calcite or dolomite.;6745255
-jesse;Jesse was the father of King David in the Bible.;6744751
 surrey;Surrey is a county in southeast England, bordering London.;6743263
 giants;Giants are beings of human form but of superhuman size, strength, or other abilities in mythology and folklore.;6724177
 solved;Solved means to find an answer or explanation for a problem or mystery.;6710172
@@ -2343,7 +2328,6 @@ aerial;Aerial refers to something existing, happening, or operating in the air.;
 rebel;A rebel is a person who resists or opposes authority, control, or convention.;6527810
 hired;Hired means employed for payment or engaged for a fee to perform a specific task or job.;6526426
 makeup;Makeup is cosmetic substances used to enhance or alter the appearance of the face or body.;6525396
-nathan;Nathan was a prophet in the Old Testament of the Bible.;6523975
 tobago;Tobago is an island in the Caribbean Sea, located northeast of Trinidad.;6521836
 hindu;Hindu refers to a person who follows or practices Hinduism, one of the world's oldest religions.;6505867
 wicked;Wicked means evil or morally wrong.;6486222
@@ -2374,7 +2358,7 @@ favors;Favors are acts of kindness or assistance beyond what is expected or due.
 potato;A potato is an edible tuber of the plant Solanum tuberosum, a staple food in many parts of the world.;6397517
 panic;Panic is a sudden, intense feeling of fear or anxiety that can lead to irrational behavior.;6396440
 sticks;Sticks are long, thin pieces of wood.;6393950
-leone;Leone was the currency of Sierra Leone until 2022.;6393163
+leone;Leone refers to Sierra Leone, a country in West Africa.;6393163
 excuse;An excuse is a reason or explanation put forward to defend or justify a fault or offense.;6390272
 onion;An onion is a bulb vegetable with layered flesh and a pungent odor, commonly used in cooking.;6384730
 strand;A strand is a single thin length of something such as thread, hair, or wire.;6383185
@@ -2446,7 +2430,7 @@ wives;Wives are the plural form of wife, referring to multiple women who are mar
 auburn;Auburn is a reddish-brown color.;6026025
 unlock;Unlock means to open or release something that is locked.;6026007
 pledge;A pledge is a solemn promise or undertaking.;6025016
-angela;Angela Merkel was the Chancellor of Germany from 2005 to 2021, serving as the first female leader of the country.;6024003
+angela;Angela Davis is an American political activist, philosopher, and author known for her involvement in the Civil Rights Movement.;6024003
 xerox;Xerox is a multinational corporation known for document management and printing technology.;6022102
 merger;A merger is the combination of two or more companies or organizations into a single entity.;6021111
 rwanda;Rwanda is a landlocked country in East Africa, bordered by Uganda, Tanzania, Burundi, and the Democratic Republic of the Congo.;6007209
@@ -2534,7 +2518,6 @@ sticky;Sticky describes something that adheres or clings to another surface.;569
 emacs;EMACS (Editing MACroS) is a family of text editors, the most popular and widely ported of which is GNU Emacs.;5697594
 climb;Climb is the act of ascending, typically by using the hands and feet.;5697476
 heated;Heated means raised in temperature or made hot.;5694239
-jackie;Jackie Kennedy was the First Lady of the United States from 1961 to 1963 as the wife of President John F. Kennedy.;5693142
 sparc;SPARC (Scalable Processor Architecture) is a reduced instruction set computing (RISC) instruction set architecture developed by Sun Microsystems.;5686425
 dover;Dover is a port city in Kent, England, known for its white cliffs and strategic location on the English Channel.;5683356
 adrian;Adrian refers to several cities and towns around the world, including Adrian, Michigan in the United States.;5683331
@@ -2542,7 +2525,7 @@ brutal;Brutal means savagely violent or cruel.;5675803
 token;A token is a thing serving as a visible or tangible representation of a fact, quality, feeling, etc.;5672353
 yields;Yields is the plural form of yield, which refers to the amount of something produced or generated.;5663314
 suited;Suited means wearing a suit or formal attire.;5662955
-dylan;Dylan Thomas was a Welsh poet and writer known for works such as 'Do not go gentle into that good night'.;5656291
+dylan;Bob Dylan is an American singer-songwriter, author, and visual artist, widely regarded as one of the most influential musicians of the 20th century.;5656291
 belts;Belts are straps or bands worn around the waist to support clothing or for decoration.;5651790
 blacks;Blacks refers to people with African ancestral origins and dark skin pigmentation.;5650814
 burke;Burke refers to Edmund Burke, an Irish statesman, philosopher, and political theorist who served in the British House of Commons.;5646090
@@ -2553,7 +2536,7 @@ tomato;A tomato is a red or yellowish fruit with a juicy pulp, used as a vegetab
 flush;Flush means to cleanse or wash out with a rush of water.;5625285
 waiver;A waiver is a voluntary relinquishment or surrender of a right or privilege.;5625238
 hayes;Hayes refers to Rutherford B. Hayes, the 19th President of the United States.;5621719
-moses;Moses was a religious leader, prophet, and lawgiver in Judaism, Christianity, and Islam.;5615802
+moses;Moses is the central figure in the biblical narrative of the Exodus, leading the Israelites out of slavery in Egypt.;5615802
 johns;Johns is sometimes used as slang for toilets or bathrooms.;5610302
 valves;Valves are mechanical devices that regulate, direct, or control the flow of fluids (gases, liquids, or slurries) by opening, closing, or partially obstructing various passageways.;5609119
 donors;Donors are individuals, organizations, or entities that give money, goods, or services to a recipient or cause.;5607009
@@ -2595,7 +2578,6 @@ ratios;Ratios are mathematical expressions that show the relationship between tw
 walnut;Walnut is a tree of the genus Juglans, cultivated for its edible nuts and timber.;5509894
 lance;A lance is a long spear-like weapon used by cavalry in historical warfare.;5509634
 ladder;A ladder is a vertical or inclined set of rungs or steps used for climbing up or down.;5508719
-italia;Italia was a personification of the Italian nation in ancient Roman culture.;5507530
 colon;Colon is a punctuation mark (:) used to introduce lists, explanations, or examples.;5494297
 lanes;Lanes are marked paths or divisions on a road, typically for the use of a single line of vehicles.;5489762
 purse;A purse is a small bag used to carry personal items, typically used by women.;5488891
@@ -2608,7 +2590,6 @@ condos;Condos, short for condominiums, are individually owned units within a lar
 plots;Plots are areas of land marked out for a specific purpose, such as gardening or building.;5466589
 gently;Gently means in a gentle manner, with mildness or tenderness.;5465493
 tulsa;Tulsa is the second-largest city in the state of Oklahoma, United States.;5463904
-casey;Casey Jones was a famous American railroad engineer who died in a train crash in 1900.;5462971
 draws;Draws refers to the plural of draw, which can mean to pull or drag something.;5458448
 fridge;A fridge is a household appliance used to keep food and beverages cool and prevent spoilage.;5458180
 bloom;Bloom refers to the flowering stage of a plant.;5456938
@@ -2643,12 +2624,10 @@ trout;Trout are popular game fish and are often sought after by anglers.;5369048
 cooked;Cooked means prepared for eating by applying heat.;5367778
 fatty;Fatty is an adjective describing something containing or consisting of fat.;5363547
 hunger;Hunger is the physical sensation of desiring food.;5358049
-joyce;James Joyce was an influential Irish novelist and short story writer, known for works such as 'Ulysses' and 'Finnegans Wake'.;5353720
 cement;Cement is a powdery substance made from calcined lime and clay, used as a binder in concrete and mortar.;5349862
 closes;Closes is the third-person singular form of the verb 'to close', meaning to shut or bring together the parts of something.;5334414
-marco;Marco Polo was a Venetian merchant, explorer, and writer who traveled through Asia in the 13th century.;5331228
+marco;Marco is a term used in the game of polo, called out to warn other players when the ball goes out of bounds.;5331228
 violin;A violin is a wooden string instrument in the violin family.;5327802
-isaac;Isaac was a patriarch of the Israelites, son of Abraham and Sarah, as described in the Hebrew Bible.;5321504
 oxide;An oxide is a chemical compound containing at least one oxygen atom and one other element.;5321340
 naples;Naples is known for its rich history, art, culture, and gastronomy, including being the birthplace of pizza.;5315957
 modems;Modems are devices that enable digital data to be transmitted over analog communication lines, such as telephone or cable networks.;5315313
@@ -2687,7 +2666,7 @@ barbie;Barbie is a fashion doll manufactured by the American toy company Mattel,
 favour;Favour is the British English spelling of 'favor'.;5196953
 knock;Knock is to strike a surface noisily to attract attention, especially when waiting to be let in through a door.;5196013
 peers;Peers are people who belong to the same social group or have the same social status.;5188853
-roland;Roland was a Frankish military leader under Charlemagne who became one of the principal figures in the literary cycle known as the Matter of France.;5188341
+roland;Roland is the subject of the epic poem 'The Song of Roland', one of the oldest surviving works of French literature.;5188341
 quilt;A quilt is a multi-layered textile, typically composed of two layers of fabric with a layer of batting in between, stitched together.;5187075
 mounts;Mounts are supports or frames on which something is fixed or displayed.;5182090
 subtle;Subtle means delicate, faint, or difficult to perceive or understand.;5175269
@@ -2743,7 +2722,6 @@ sewer;A sewer is an underground conduit for carrying off drainage water and wast
 bosch;Bosch is a German multinational engineering and technology company founded in 1886.;5007744
 treats;Treats are items of food or drink that are given or eaten for pleasure.;5005269
 marino;Marino refers to Dan Marino, a former American football quarterback who played for the Miami Dolphins in the National Football League (NFL).;5004742
-carson;Kit Carson was a famous American frontiersman, explorer, and military officer.;5001978
 vitro;Vitro refers to a scientific process or experiment performed outside a living organism, typically in a test tube or controlled laboratory environment.;5000420
 gallon;A gallon is a unit of volume in the imperial and US customary systems of measurement.;4998083
 hyatt;Hyatt is a multinational hospitality company that manages and franchises luxury hotels, resorts, and vacation properties.;4995940
@@ -2833,7 +2811,7 @@ jumper;A jumper is a sleeveless dress typically worn over a blouse or sweater.;4
 majors;Majors are primary fields of study in colleges or universities.;4745096
 bells;Bells are hollow metal instruments that produce sound when struck.;4743841
 denim;Denim is a sturdy cotton twill fabric, typically blue, used for jeans and other clothing.;4737554
-delphi;Delphi was an ancient Greek city famous for its Oracle of Apollo, considered the most important oracle in the classical Greek world.;4732371
+delphi;Delphi is a programming language and integrated development environment (IDE) for rapid application development.;4732371
 trophy;A trophy is an object awarded as a prize for victory or achievement, especially in sports or other competitions.;4731863
 buick;Buick is an American automobile brand owned by General Motors.;4731433
 sights;Sights are things worth seeing, especially interesting or impressive places to visit.;4730414
@@ -2842,7 +2820,6 @@ doses;Doses are prescribed amounts of a medicine or drug to be taken at one time
 baked;Baked describes food that has been cooked by dry heat in an oven.;4716100
 glove;A glove is a covering for the hand with separate sheaths for each finger and the thumb.;4714578
 constructor;function Object() { [native code] };4711086
-debbie;Debbie Reynolds was an American actress, singer, and businesswoman.;4708556
 trojan;Trojan refers to a native or inhabitant of ancient Troy.;4701127
 spinal;Spinal refers to structures or conditions related to the spine or spinal cord.;4699709
 sooner;Sooner refers to settlers who entered the Oklahoma Territory before the official opening date in 1889.;4695133
@@ -2975,7 +2952,7 @@ coded;Coded refers to information or messages that have been converted into a co
 supra;Supra is a Latin word meaning 'above' or 'earlier' in a text, often used in academic writing to refer to a previously mentioned source or point.;4329457
 molly;Molly is a slang term for MDMA, a psychoactive drug also known as ecstasy.;4328076
 chiefs;Chiefs are the leaders or heads of a group, organization, or tribe.;4321619
-franz;Franz Kafka was an influential Czech novelist and short story writer.;4321556
+franz;Franz Joseph I was Emperor of Austria and King of Hungary from 1848 to 1916.;4321556
 palau;Palau is an island country in the western Pacific Ocean.;4315852
 lodges;Lodges are buildings or rooms used for meetings by members of a society or club.;4314249
 scream;A scream is a loud, high-pitched cry or sound expressing extreme emotion, typically fear, pain, or excitement.;4310000
@@ -2986,7 +2963,7 @@ rival;A rival is a person or thing competing for the same objective or for super
 slower;Slower is the comparative form of 'slow', meaning moving or operating at a lower speed.;4293888
 beige;Beige is a light, yellowish-brown color.;4288534
 vanity;Vanity is excessive pride in or admiration of one's own appearance or achievements.;4284766
-homer;Homer was an ancient Greek poet credited with composing the epic poems the Iliad and the Odyssey.;4281428
+homer;Homer is considered one of the most important and influential authors in the Western literary tradition.;4281428
 gases;Gases are substances that expand freely to fill any space available, having no fixed shape or volume.;4277836
 genus;A genus is a taxonomic rank in biological classification, ranking below family and above species.;4275567
 cutter;A cutter is a person or tool that cuts something.;4273307
@@ -3010,7 +2987,6 @@ trent;Trent is a river in England.;4242725
 barber;A barber is a person whose occupation is cutting and styling hair, especially men's hair.;4241984
 rigid;Rigid means stiff, inflexible, or unyielding.;4240019
 salsa;Salsa is a spicy sauce in Mexican and other Latin American cuisines, typically made with tomatoes, onions, and chili peppers.;4234056
-claude;Claude Monet was a famous French Impressionist painter.;4230997
 blown;Blown refers to something that has been moved or shaped by wind or air.;4229918
 baton;A baton is a stick used by conductors to direct an orchestra or band.;4229776
 abbey;An Abbey is a monastery or convent governed by an abbot or abbess.;4224864
@@ -3027,7 +3003,6 @@ bauer;Bauer is a manufacturer of ice hockey and roller hockey equipment.;4197776
 caicos;Caicos is part of the Turks and Caicos Islands, a British Overseas Territory in the Caribbean.;4194502
 bowls;Bowls is a sport in which players roll biased balls toward a smaller target ball.;4193933
 cosmic;COSMIC refers to something relating to the cosmos or the universe.;4191929
-dawson;Dawson's Creek was a popular American teen drama television series that aired from 1998 to 2003.;4191412
 beacon;A beacon is a conspicuous object or device serving as a signal, warning, or guide, especially at sea or on an airfield.;4190278
 hoover;Hoover refers to Herbert Hoover, the 31st President of the United States, who served from 1929 to 1933.;4189070
 macau;Macau is a special administrative region of China located on the western side of the Pearl River estuary.;4187604
@@ -3079,7 +3054,7 @@ outfit;An outfit is a set of clothes worn together, especially for a particular 
 burma;Burma was under British colonial rule from 1824 to 1948.;4082398
 cease;Cease means to come to an end or stop.;4081957
 aboard;Aboard means on or in a ship, aircraft, or other vehicle.;4080258
-irving;Irving was the birthplace of the Dallas Cowboys football team.;4079383
+irving;Irving refers to Washington Irving, an American short story writer, essayist, biographer, historian, and diplomat.;4079383
 joints;Joints are the points where two or more bones meet in the body.;4078045
 poles;Poles are the people of Poland or individuals of Polish descent.;4074284
 bounds;Bounds are limits or boundaries, often used to define an area or range.;4073402
@@ -3095,7 +3070,7 @@ equip;Equip is a verb meaning to furnish or provide with necessary items for a p
 hedge;A hedge is a row of closely planted shrubs or trees forming a boundary or barrier.;4041429
 fender;A fender is a part of a vehicle that covers the wheels to protect against splashing.;4039339
 violet;Violet is a color that is a mixture of red and blue, found at the end of the visible spectrum of light.;4038524
-hitler;Adolf Hitler was an Austrian-born German politician who served as the leader of Nazi Germany from 1933 to 1945.;4034321
+hitler;Hitler was responsible for initiating World War II in Europe and orchestrating the Holocaust, resulting in the deaths of millions of people.;4034321
 curry;Curry is a dish of meat, vegetables, etc., cooked in an Indian-style sauce of strong spices.;4029540
 pearls;Pearls are hard, rounded objects produced within the soft tissue of mollusks.;4027893
 worms;Worms are elongated, soft-bodied invertebrate animals.;4027528
@@ -3129,7 +3104,6 @@ straw;Straw is the dry stalks of cereal plants after the grain and chaff have be
 lifted;Lifted is the past tense and past participle of the verb 'lift', meaning to raise or elevate something.;3957493
 citrus;Citrus is a genus of flowering plants in the rue family, Rutaceae.;3955640
 reuse;Reuse is the act of using something again, either for its original purpose or for a different one.;3950428
-ernest;Ernest Hemingway was an American novelist, short-story writer, and journalist, known for his economical and understated style.;3950109
 bakery;A bakery is an establishment that produces and sells bread, cakes, pastries, and other baked goods.;3947064
 orchid;An orchid is a plant in the family Orchidaceae, known for its colorful and often fragrant flowers.;3946535
 loses;Loses is the third-person singular present tense of the verb 'to lose', meaning to be deprived of or cease to have or retain something.;3942953
@@ -3171,7 +3145,6 @@ spells;Spells are words or phrases believed to have magical powers.;3875038
 rookie;A rookie is a person in their first year of professional competition, especially in sports.;3870767
 births;Births are the events of bringing forth new life, typically referring to the emergence of offspring from the body of its mother.;3867031
 ritual;A ritual is a ceremony or series of acts regularly repeated in a set precise manner.;3861920
-miguel;Miguel de Cervantes was a Spanish writer who authored Don Quixote, considered the first modern novel.;3861205
 kerala;Kerala is known for its palm-lined beaches, backwaters, and diverse wildlife.;3861158
 onset;Onset is the beginning or early stages of something.;3858839
 assay;Assay is the testing of a metal or ore to determine its ingredients and quality.;3855224
@@ -3190,7 +3163,6 @@ slate;Slate is a fine-grained, foliated metamorphic rock derived from sedimentar
 debris;Debris is scattered fragments, ruins, or remains of something destroyed.;3806697
 pagan;Pagan refers to a person holding religious beliefs other than those of the main world religions.;3805644
 widow;A widow is a woman who has lost her spouse by death and has not remarried.;3804620
-benson;Benson was an American sitcom that aired from 1979 to 1986, starring Robert Guillaume.;3801754
 skies;Skies is the plural form of sky, referring to the atmosphere and outer space as viewed from Earth.;3796788
 kicks;Kicks are sudden, forceful strikes with the foot or feet.;3792491
 canoe;A canoe is a narrow, keelless boat with pointed ends, propelled by a paddle or paddles.;3790795
@@ -3316,9 +3288,9 @@ biker;A biker is a person who rides a motorcycle.;3530897
 parked;Parked means a vehicle has been left in a stationary position.;3530425
 castro;Castro refers to Fidel Castro, the revolutionary leader who ruled Cuba from 1959 to 2008.;3530162
 peanut;A peanut is an edible seed of a legume plant, often consumed as a snack or used in cooking.;3529318
-holden;Holden was an Australian automobile marque owned by General Motors.;3529238
+holden;Holden was founded in 1856 as a saddlery manufacturer and began manufacturing cars in 1908.;3529238
 nauru;Nauru is an island country and microstate in Micronesia, in the Central Pacific.;3527512
-kaiser;Kaiser was the title of the emperor of Germany from 1871 to 1918.;3525640
+kaiser;Kaiser is a type of bread roll, often topped with poppy or sesame seeds.;3525640
 wallis;Wallis is a canton in southern Switzerland.;3524128
 retire;To retire is to withdraw from one's position or occupation.;3522241
 rumors;Rumors are unverified pieces of information or stories circulating from person to person.;3522170
@@ -3400,7 +3372,7 @@ midst;Midst is a noun meaning the middle part or point of something.;3381410
 methyl;Methyl is a chemical group or radical consisting of one carbon atom bonded to three hydrogen atoms (CH3).;3381243
 borne;Borne is the past participle of the verb 'to bear', meaning to carry or support.;3379421
 ramada;Ramada is a large American multinational hotel chain owned by Wyndham Hotels and Resorts.;3379181
-marvin;Marvin Gaye was a renowned American singer, songwriter, and record producer.;3376846
+marvin;Marvin the Paranoid Android is a fictional character from Douglas Adams' 'The Hitchhiker's Guide to the Galaxy' series.;3376846
 usable;Usable means capable of being used or fit for use.;3373023
 tempo;TEMPO is a stable nitroxyl radical used in various chemical applications.;3372997
 getty;Getty refers to the Getty family, prominent in American business and known for their wealth derived from the oil industry.;3372135
@@ -3454,7 +3426,6 @@ mapped;Mapped is the past tense and past participle of the verb 'to map'.;330080
 decree;A decree is an official order issued by a legal authority or ruler.;3299438
 seoul;Seoul is the capital and largest metropolis of South Korea.;3297895
 lacks;Lacks is the third-person singular form of the verb 'to lack', meaning to be without or deficient in something.;3296569
-jerome;Jerome was a Latin Catholic priest, confessor, theologian, and historian, best known for his translation of the Bible into Latin (the Vulgate).;3295724
 gamble;Gamble is a verb meaning to play games of chance for money or to take risky actions in the hope of a desired result.;3294887
 gravel;Gravel is a loose aggregation of rock fragments.;3294483
 judged;Judged is the past tense and past participle of the verb 'to judge'.;3293503
@@ -3603,7 +3574,6 @@ codec;A CODEC is used in digital video and audio compression and decompression.;
 brides;Brides are women on their wedding day or just before and after the event.;3047745
 glossy;Glossy describes a surface that is smooth and shiny, reflecting light.;3045309
 haired;Haired means covered with or having hair.;3043626
-pablo;Pablo Picasso was a renowned Spanish painter, sculptor, and co-founder of the Cubist movement in art.;3042285
 lethal;Lethal means capable of causing or resulting in death.;3040987
 cavity;A cavity is a hollow space within a solid object.;3037278
 molded;Molded refers to something that has been shaped in a mold.;3035204
@@ -3677,7 +3647,7 @@ cosmos;COSMOS refers to the universe as an ordered and harmonious system.;292138
 dixie;Dixie is a popular song that became the unofficial anthem of the Confederacy during the American Civil War.;2920964
 legion;A legion is a large military unit, historically a division of 3,000 to 6,000 men in the ancient Roman army.;2920122
 shook;Shook is the past tense and past participle of shake, meaning to move or cause to move with rapid, forceful, oscillating motions.;2917411
-isaiah;Isaiah was a major prophet in Judaism and Christianity who lived in the 8th century BCE.;2912696
+isaiah;The Book of Isaiah is a part of the Hebrew Bible and the Old Testament of the Christian Bible.;2912696
 addict;An addict is a person who is physically or psychologically dependent on a particular substance or activity.;2910117
 matte;Matte is a flat or dull finish, often used in paint, makeup, or photography.;2909215
 heidi;Heidi is a Swiss work of fiction by Johanna Spyri, published in 1881.;2908650
@@ -3720,7 +3690,6 @@ behold;Behold is a verb meaning to see or observe someone or something, especial
 hazel;Hazel is a light brown to yellowish-brown color.;2841268
 ledger;Ledger is a book or digital file for recording financial transactions.;2840827
 laughs;Laughs are expressions or sounds of mirth or amusement.;2839804
-connie;Connie Mack was a famous American professional baseball player, manager, and team owner.;2838668
 depths;Depths refer to the deepest or most extreme parts of something, such as the ocean or a situation.;2836629
 spices;Spices are aromatic or pungent vegetable substances used to flavor food.;2836609
 loader;A loader is a machine or device used for loading materials or objects.;2836507
@@ -3750,7 +3719,6 @@ reside;To reside means to live or dwell permanently or for an extended period in
 anglo;Anglo is a prefix relating to or denoting English or England.;2798286
 knots;Knots are units of speed used in maritime and aviation contexts, equal to one nautical mile per hour.;2796342
 kappa;Kappa is the 10th letter of the Greek alphabet.;2793667
-samson;Samson was a legendary Israelite warrior and judge, known for his superhuman strength.;2793475
 jumps;Jumps are actions of propelling oneself into the air or over an obstacle.;2793122
 seldom;Seldom means rarely or not often.;2790565
 morrow;Morrow refers to the following day or the near future.;2789797
@@ -3968,7 +3936,6 @@ rowing;Rowing is the act of propelling a boat using oars.;2490271
 siding;Siding is the protective material attached to the exterior walls of a house or building.;2490194
 negro;Negro is a historically used term for people of black African descent, now considered outdated and often offensive in many contexts.;2489080
 blanca;Blanca is a mountain in the Sierra Nevada range of California, United States.;2489053
-johann;Johann Sebastian Bach was a famous German composer and musician of the Baroque period.;2488289
 wrath;Wrath is intense anger or rage.;2486700
 grind;Grind is the act of reducing something to small particles or powder by crushing it.;2482307
 albeit;Albeit is a conjunction meaning 'although' or 'even though'.;2482233
@@ -3982,11 +3949,9 @@ sucked;Sucked is the past tense and past participle of suck, meaning to draw int
 cooks;Cooks are professionals or individuals who prepare food for consumption.;2470395
 rainy;Rainy describes weather conditions characterized by falling rain.;2469088
 regent;A regent is a person appointed to administer a country during the minority, absence, or incapacity of the sovereign.;2468483
-evelyn;Evelyn Waugh was a notable English writer known for novels such as 'Brideshead Revisited'.;2468215
 diggs;Stefon Diggs is an American football wide receiver for the Buffalo Bills of the National Football League (NFL).;2467168
 pluto;Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune.;2466856
 misery;Misery refers to extreme discomfort or wretchedness of body or mind.;2464795
-mitch;Hurricane Mitch was a devastating Category 5 hurricane that struck Central America in 1998.;2464162
 mailer;A mailer is a person or company that sends mail.;2461916
 liners;Liners are ships or aircraft that transport passengers or cargo on a regular schedule.;2461442
 unread;Unread describes something that has not been read or perused.;2460260
@@ -4017,7 +3982,6 @@ macon;Macon is a type of French white wine produced in the Maconnais region of B
 uptake;Uptake is the action of taking up or absorbing something.;2434566
 geared;Geared refers to something equipped with or designed to operate with gears.;2434240
 ideals;Ideals are principles or values that one actively pursues as a goal.;2434179
-chloe;Chloe was an epithet of the Greek goddess Demeter.;2434045
 tycoon;A tycoon is a wealthy and powerful person in business or industry.;2432605
 lawful;Lawful means conforming to or permitted by law.;2429707
 crosby;Crosby is associated with Bing Crosby, an American singer and actor.;2429109
@@ -4058,7 +4022,6 @@ torino;Torino is a professional football club based in Turin, Italy.;2384619
 plague;Plague is a severe bacterial infection caused by Yersinia pestis, historically responsible for devastating pandemics.;2383845
 canine;A canine is a dog or other member of the family Canidae.;2383411
 gladly;Gladly is an adverb meaning in a joyful, willing, or cheerful manner.;2383400
-julius;Julius Caesar was a Roman general, statesman, and historian who played a critical role in the transformation of the Roman Republic into the Roman Empire.;2382296
 cannes;Cannes is known for its luxury hotels, beaches, and association with the film industry.;2382265
 morse;Morse code is a method of transmitting text information as a series of on-off tones, lights, or pulses.;2382036
 piston;A piston is a cylindrical component that moves up and down or back and forth inside a cylinder or other contained space.;2381202
@@ -4076,7 +4039,6 @@ gregg;Gregg shorthand is a form of stenography invented by John Robert Gregg in 
 chalet;A chalet is a type of wooden house or cottage with a sloping roof and wide eaves, typically found in the Swiss Alps.;2368986
 huang;Huang refers to the Yellow River, one of the major rivers in China.;2368880
 hopper;A hopper is a container for storing or feeding material, typically with sloping sides and an opening at the bottom.;2367920
-ludwig;Ludwig van Beethoven was a renowned German composer and pianist of the Classical and early Romantic periods.;2365101
 filler;Filler is a substance used to fill gaps or spaces.;2363583
 smiley;Smiley is a facial expression or emoticon representing a smiling face, typically depicted as :) or :relaxed:.;2363430
 zenith;Zenith is the point in the sky directly above an observer.;2363349
@@ -4088,7 +4050,6 @@ scrub;Scrub is an act of cleaning something by rubbing it hard.;2360299
 cello;A cello is a large, low-pitched string instrument of the violin family.;2358848
 occupy;To occupy means to take up or fill a space or time.;2357306
 caves;Caves are natural underground spaces or chambers formed by geological processes.;2355316
-audrey;Audrey Hepburn was a British actress and humanitarian, known for her roles in films such as 'Breakfast at Tiffany's' and 'Roman Holiday'.;2354566
 merlin;Merlin is a legendary wizard and prophet in Arthurian legend.;2354378
 cocos;Cocos refers to the Cocos Islands, also known as the Keeling Islands, a territory of Australia in the Indian Ocean.;2354000
 aiming;Aiming is the act of pointing or directing something, typically a weapon or camera, at a target.;2353915
@@ -4120,7 +4081,6 @@ frogs;Frogs are amphibians in the order Anura, characterized by long hind legs, 
 raider;A raider is a person who attacks an enemy in their territory.;2323603
 timers;Timers are devices used to measure and control the duration of an event or process.;2322877
 miners;Miners are workers who extract ore, coal, or other minerals from the earth.;2322828
-agnes;Agnes of Rome was an early Christian saint and martyr, venerated in the Catholic and Orthodox churches.;2322429
 rocker;A rocker is a person associated with rock music, especially a rock musician.;2322314
 sawyer;Tom Sawyer is the titular character in Mark Twain's novel 'The Adventures of Tom Sawyer'.;2321394
 maori;Maori refers to the indigenous Polynesian people of New Zealand.;2321308
@@ -4139,7 +4099,6 @@ moran;Moran is a term used in Maasai culture to refer to a young warrior.;231245
 decal;A decal is a decorative design or image that can be transferred from specially prepared paper onto another surface, such as glass, metal, or wood.;2311933
 nausea;Nausea is a feeling of sickness with an inclination to vomit.;2311479
 temps;Temps is a plural noun referring to temporary workers or employees.;2309859
-fiona;Fiona was a powerful Category 4 hurricane that caused extensive damage in the Caribbean in September 2022.;2309644
 floods;Floods are overflows of water that submerge land that is usually dry.;2309318
 fritz;Fritz is a chess engine developed in the 1990s.;2309089
 mover;A mover is a person or company that transports household goods, furniture, and personal effects from one location to another.;2309084
@@ -4149,7 +4108,6 @@ rupert;Rupert is a character in the children's book series 'Rupert Bear'.;230258
 shrine;A shrine is a place regarded as holy because of its associations with a divinity or a sacred person or relic.;2302579
 malibu;Malibu is a beach city in Los Angeles County, California, known for its celebrity homes and beaches.;2300139
 memoir;A memoir is a form of autobiographical writing that focuses on specific experiences or periods in the author's life.;2299845
-betsy;Betsy Ross was an American upholsterer who, according to legend, made the first American flag.;2299580
 shaun;Shaun the Sheep is a British stop-motion animated television series and spin-off of the Wallace and Gromit franchise.;2299131
 fauna;Fauna refers to all the animal life present in a particular region or time.;2298940
 cliffs;Cliffs are steep rock faces, especially at the edge of the sea.;2298828
@@ -4209,7 +4167,6 @@ diner;A diner is a small, informal restaurant typically serving American cuisine
 regis;REGIS University is a private Jesuit university in Denver, Colorado, United States.;2260707
 mound;A mound is a raised mass of earth, gravel, sand, rocks, or debris.;2259654
 snatch;Snatch is a quick, sudden grabbing or seizing action.;2256983
-ethan;Ethan Allen was a prominent American Revolutionary War hero and one of the founders of Vermont.;2256315
 kissed;Kissed is the past tense and past participle of the verb 'kiss', meaning to touch or caress with the lips as a sign of affection, greeting, or reverence.;2254272
 psalms;Psalms is a book in the Old Testament of the Bible, containing religious songs and poems.;2253800
 ibiza;Ibiza is an island in the Mediterranean Sea, off the coast of Spain.;2252881
@@ -4269,7 +4226,6 @@ ceased;Ceased means to have come to an end or to have stopped.;2207677
 sophia;Sophia is the capital and largest city of Bulgaria.;2205688
 pastry;Pastry is a type of dough made from flour, fat, and water, used as a base for baked goods.;2202621
 levin;Levin is an archaic term for lightning or a flash of lightning.;2202321
-amiga;Amiga was a family of personal computers sold by Commodore in the 1980s and 1990s.;2201683
 viper;A viper is a venomous snake belonging to the family Viperidae.;2201559
 gypsy;Gypsy is a term, often considered derogatory, for a member of the Romani people.;2201227
 repeal;Repeal is the act of revoking or rescinding a law, regulation, or other official decision.;2200528
@@ -4279,7 +4235,7 @@ admire;To admire is to regard with wonder, pleasure, or approval.;2196307
 litre;A litre is a metric unit of volume equal to 1,000 cubic centimeters or approximately 1.76 pints.;2195204
 poured;Poured is the past tense and past participle of 'pour', meaning to cause a liquid or other substance to flow in a steady stream.;2195144
 binds;Binds are materials or substances that hold things together.;2193939
-titus;Titus was a Roman Emperor who ruled from 79 to 81 CE.;2193051
+titus;Titus is a book in the New Testament of the Christian Bible.;2193051
 suffix;A suffix is a letter or group of letters added to the end of a word to change its meaning or function.;2192739
 gandhi;Gandhi refers to Mohandas Karamchand Gandhi, also known as Mahatma Gandhi, an Indian lawyer, anti-colonial nationalist, and political ethicist.;2192142
 mister;Mister, often abbreviated as Mr., is a form of address for men, typically those without another professional or academic title.;2191168
@@ -4300,9 +4256,8 @@ proofs;Proofs are evidence or arguments establishing a fact or the truth of a st
 garth;Garth refers to an enclosed yard, garden, or paddock, typically adjacent to a house.;2176273
 nolan;Nolan refers to Christopher Nolan, a British-American film director known for movies such as 'Inception' and 'The Dark Knight'.;2175918
 alloys;Alloys are mixtures of two or more metals, or a metal and another element.;2175171
-paolo;Paolo Uccello was an Italian painter and mathematician of the early Renaissance.;2174306
 truman;Truman refers to Harry S. Truman, the 33rd President of the United States, who served from 1945 to 1953.;2172356
-argus;Argus was a many-eyed giant in Greek mythology, often described as having a hundred eyes.;2172332
+argus;Argus is a genus of large butterflies, commonly known as peacock butterflies.;2172332
 mango;Mango is a tropical fruit from the drupe family, known for its sweet flavor and juicy texture.;2171900
 polite;Polite describes behavior that is respectful, considerate, and adheres to social norms of courtesy.;2171161
 thigh;The thigh is the part of the leg between the hip and the knee in humans and other animals.;2171107
@@ -4339,7 +4294,6 @@ bethel;Bethel is a religious term used by some Christian denominations to refer 
 entre;Entre is a French preposition meaning 'between' or 'among'.;2134677
 plano;Plano is a term used in Spanish and Portuguese meaning 'flat' or 'plain'.;2134185
 doris;Doris refers to an ancient Greek sea goddess, daughter of Oceanus and Tethys.;2132988
-dwight;Dwight D. Eisenhower was the 34th President of the United States and a five-star general during World War II.;2132409
 stokes;Stokes's theorem is a fundamental result in vector calculus that relates the surface integral of the curl of a vector field to the line integral of the vector field around the boundary of the surface.;2130793
 lakers;The Lakers are a professional basketball team based in Los Angeles, California, competing in the National Basketball Association (NBA).;2130619
 harlem;Harlem is a neighborhood in Upper Manhattan, New York City, known for its significant African American history and culture.;2129282
@@ -4367,7 +4321,7 @@ philly;Philly is short for Philadelphia cream cheese, a brand of cream cheese.;2
 juliet;Juliet is the female protagonist in William Shakespeare's tragedy 'Romeo and Juliet'.;2100455
 galore;Galore is an adjective meaning in abundance or plentiful.;2099185
 aloha;Aloha is a Hawaiian word used as a greeting or farewell.;2099181
-persia;Persia was a major empire in ancient times, known for its rich culture and powerful rulers.;2098507
+persia;The Persian language, also known as Farsi, is the official language of modern-day Iran.;2098507
 utter;Utter means to speak or express something aloud.;2096533
 rents;Rents are periodic payments made for the use of property, especially real estate.;2094682
 theirs;Theirs is a possessive pronoun used to indicate ownership or association with a group of people or things previously mentioned.;2094103
@@ -4399,7 +4353,7 @@ lionel;Lionel refers to Lionel Corporation, an American toy manufacturer best kn
 rhymes;Rhymes are words that have the same ending sound.;2057587
 erect;Erect means upright or vertical in position.;2057313
 vests;Vests are sleeveless garments worn over other clothing, typically extending down to the waist.;2056167
-lydia;Lydia was an ancient kingdom in western Asia Minor, located in what is now western Turkey.;2055299
+lydia;Lydia is a character in the New Testament of the Bible, known as the first documented convert to Christianity in Europe.;2055299
 coyote;A coyote is a canine native to North America, scientifically known as Canis latrans.;2055263
 pollen;Pollen is a fine powdery substance produced by seed plants, consisting of pollen grains that contain male gametes.;2053694
 valet;A valet is a man's personal male attendant, responsible for his clothes and appearance.;2052690
@@ -4418,12 +4372,12 @@ inmate;An inmate is a person confined to an institution such as a prison or ment
 septic;Septic means relating to or caused by bacteria.;2044503
 armada;Armada refers to a fleet of warships.;2044394
 wrench;Wrench is a hand tool used for gripping and turning nuts, bolts, or pipes.;2044382
-amelia;Amelia Earhart was a pioneering American aviator who disappeared in 1937 during an attempt to fly around the world.;2042715
+amelia;Amelia is a genus of crustaceans in the family Cymothoidae.;2042715
 jonah;Jonah is a prophet in the Hebrew Bible and the Christian Old Testament, known for being swallowed by a large fish or whale.;2042513
 raped;Raped means to have been subjected to rape, which is the act of forcing someone to engage in sexual activity without their consent.;2040735
 sloan;Sloan refers to the Sloan Digital Sky Survey, an astronomical survey project.;2040295
 flawed;Flawed means having imperfections, defects, or weaknesses.;2040094
-plato;Plato was an ancient Greek philosopher who founded the Academy in Athens.;2039668
+plato;Plato wrote influential works on philosophy, politics, and ethics, including 'The Republic'.;2039668
 palma;Palma is the capital city of the Spanish island of Mallorca.;2035402
 taxis;Taxis is the movement of an organism in response to a stimulus, such as light or chemical gradients.;2034449
 hates;Hates is the third-person singular present tense of the verb 'hate'.;2034161
@@ -4471,7 +4425,6 @@ markus;Markus is a variant spelling of Marcus.;1990346
 thence;Thence is an adverb meaning from that place, time, or source.;1989263
 bleed;Bleed is to lose blood from the body, typically as a result of injury or wound.;1989071
 goblet;A goblet is a type of drinking vessel with a stem and a foot, typically used for wine.;1986831
-simone;Simone de Beauvoir was a French writer, intellectual, existentialist philosopher, political activist, feminist, and social theorist.;1985976
 fronts;Fronts are the forward-facing or most prominent parts of something.;1985378
 incur;Incur means to become subject to or liable for something, especially a cost or expense.;1984112
 tempe;Tempe is home to Arizona State University, one of the largest public universities in the United States.;1984024
@@ -4502,10 +4455,10 @@ sedona;Sedona is a popular tourist destination, famous for its outdoor recreatio
 teller;A teller is a bank employee who handles routine transactions with customers.;1962509
 siena;Siena is a color, a yellowish-brown pigment originally made from clay found near Siena, Italy.;1962358
 biopsy;A biopsy is a medical procedure in which a small sample of tissue is removed from the body for examination and diagnosis.;1962155
-dante;Dante Alighieri was an Italian poet, writer, and philosopher best known for his epic poem 'The Divine Comedy'.;1961656
+dante;Dante is often referred to as the 'Father of the Italian language' for his use of vernacular Italian in his works.;1961656
 lange;Lange refers to Dorothea Lange, an influential American documentary photographer and photojournalist.;1961635
 quarry;A quarry is an open excavation or pit from which stone, rock, or minerals are extracted.;1960848
-seneca;Seneca was a Roman Stoic philosopher, statesman, and dramatist who lived from 4 BC to 65 AD.;1960810
+seneca;Seneca refers to a Native American tribe, part of the Iroquois Confederacy, historically located in what is now New York state.;1960810
 rosen;The Rosen method is a form of bodywork developed by Marion Rosen.;1959045
 insult;An insult is a disrespectful or scornful remark or action intended to offend or hurt someone's feelings.;1955836
 scraps;Scraps are small discarded or leftover pieces of food or material.;1955784
@@ -4531,7 +4484,7 @@ bitmap;A bitmap is a type of image file format used to store digital images.;194
 boyle;Boyle refers to Robert Boyle, an Anglo-Irish natural philosopher, chemist, physicist, and inventor born in 1627.;1944635
 lamar;Lamar University is a public university in Beaumont, Texas, United States.;1944419
 jonas;Jonas refers to the biblical prophet Jonah in some translations of the Bible.;1943585
-locke;John Locke was an English philosopher and physician widely regarded as one of the most influential of Enlightenment thinkers.;1943130
+locke;Locke is a character in the TV series 'Lost'.;1943130
 cages;Cages are enclosures made of wire, bars, or other materials, used to confine animals or objects.;1943021
 pager;A pager is a wireless telecommunications device that receives and displays alphanumeric or voice messages.;1942889
 jolla;Jolla is a Finnish company that developed the Sailfish OS mobile operating system.;1942048
@@ -4543,7 +4496,7 @@ relays;Relays are devices that open or close electrical circuits.;1938030
 fading;Fading is the process of gradually growing faint or disappearing.;1936749
 pepsi;Pepsi is a carbonated soft drink manufactured by PepsiCo.;1933586
 endure;Endure means to suffer patiently through a difficult or unpleasant situation.;1931473
-adler;Alfred Adler was an Austrian medical doctor and psychotherapist who founded the school of individual psychology.;1926676
+adler;Adler Planetarium is a public museum dedicated to astronomy and astrophysics in Chicago, Illinois.;1926676
 cursed;Cursed means subject to or deserving a curse.;1926459
 youths;Youths are young people, typically teenagers or young adults.;1926116
 massey;Massey University is a public university in New Zealand.;1925837
@@ -4583,7 +4536,7 @@ bogus;Bogus means not genuine or counterfeit; fake or fraudulent.;1903710
 barred;Barred means blocked or shut off by bars or other obstructions.;1902400
 urging;Urging is the act of trying earnestly or persistently to persuade someone to do something.;1900469
 faded;Faded refers to something that has lost color, brightness, or intensity gradually over time.;1899648
-mobil;Mobil was a major American oil company that merged with Exxon in 1999 to form ExxonMobil.;1899550
+mobil;Mobil was known for its distinctive red flying horse (Pegasus) logo.;1899550
 tying;Tying is the act of fastening, attaching, or securing with a tie or cord.;1898217
 diode;A diode is an electronic component that allows current to flow in one direction but blocks it in the opposite direction.;1897828
 melted;Melted refers to a substance that has been changed from a solid to a liquid state by heat.;1896489
@@ -4620,7 +4573,6 @@ bonsai;Bonsai is the Japanese art of growing and training miniature trees in con
 sofas;Sofas are long, upholstered seats with a back and arms, designed to comfortably seat multiple people.;1871940
 boing;Boing is an onomatopoeic word representing the sound of something bouncing or springing.;1870671
 odessa;Odessa is a port city on the Black Sea in southern Ukraine.;1870454
-rosie;Rosie the Riveter was a cultural icon representing American women who worked in factories during World War II.;1868709
 terre;Terre is used in various French phrases and expressions related to soil, ground, or the planet Earth.;1868063
 faucet;A faucet is a device for controlling the flow of liquid from a pipe, typically consisting of a tap or spout.;1867270
 midget;Midget is an outdated and often offensive term for a person of unusually small stature.;1865119
@@ -4639,9 +4591,7 @@ asean;ASEAN is an intergovernmental organization of ten Southeast Asian countrie
 latent;Latent describes something existing but not yet developed or manifest; hidden or concealed.;1855269
 marcia;Marcia is a genus of moths in the family Noctuidae.;1854936
 shalt;Shalt is an archaic second-person singular form of 'shall', typically used in religious or poetic contexts.;1854326
-hector;Hector was a Trojan prince and the greatest fighter for Troy in the Trojan War, as depicted in Homer's Iliad.;1853371
 wicker;Wicker is a type of weave used to make furniture and baskets from plant materials such as willow, rattan, or reed.;1851813
-browne;Sir Thomas Browne was a 17th-century English author and physician known for his varied works on religion, science, and esoterica.;1851153
 nephew;A nephew is the son of one's brother or sister, or of one's brother-in-law or sister-in-law.;1851122
 visor;A visor is a projecting piece on a cap or helmet, designed to shade the eyes.;1850201
 jarvis;Jarvis Island is an uninhabited coral island in the South Pacific Ocean.;1849756
@@ -4723,7 +4673,6 @@ logger;A logger is a person who cuts down trees for a living.;1784581
 greet;Greet is a verb meaning to welcome or address someone with a salutation or expression of goodwill.;1784219
 lymph;Lymph is a colorless fluid containing white blood cells that bathes the tissues and drains through the lymphatic system into the bloodstream.;1781845
 barrie;Barrie refers to J.M. Barrie, the Scottish novelist and playwright best known for creating Peter Pan.;1781427
-miriam;Miriam was a prophetess in the Old Testament, sister of Moses and Aaron.;1780742
 pumped;Pumped means filled with liquid or gas by pumping.;1780464
 bryce;Bryce Canyon is a national park in Utah, USA, known for its distinctive geological features called hoodoos.;1778157
 latch;A latch is a device for holding a door, gate, or window closed.;1777882
@@ -4769,14 +4718,13 @@ flown;Flown is the past participle of the verb 'to fly,' indicating that somethi
 dubbed;Dubbed refers to the process of adding a new soundtrack to a film or video production, typically in a different language.;1749520
 silky;Silky describes something that is smooth and soft to the touch, resembling silk.;1749406
 groovy;Groovy is a slang term meaning fashionable, attractive, or excellent.;1748998
-micah;Micah was a prophet in Judaism who authored the Book of Micah in the Hebrew Bible.;1747263
 repay;Repay means to pay back money that was borrowed.;1746487
 await;Await means to wait for or expect something.;1745587
 sparse;Sparse means thinly dispersed or scattered.;1745258
 fetus;A fetus is the unborn offspring of a mammal, specifically in the later stages of development.;1744267
 cider;Cider is an alcoholic beverage made from fermented apple juice.;1743446
 gangs;Gangs are organized groups of individuals, typically involved in criminal activities.;1743105
-lenny;Lenny Bruce was an American stand-up comedian, social critic, and satirist.;1742017
+lenny;Lenny Kravitz is an American singer, songwriter, actor, and record producer.;1742017
 remake;A remake is a new version or adaptation of an existing work, such as a film, song, or product.;1741098
 conan;Conan is a fictional character created by Robert E. Howard, a barbarian warrior-hero featured in fantasy stories.;1738688
 lilac;Lilac is a shrub or small tree of the olive family, with fragrant pale purple or white blossoms.;1738684
@@ -4791,7 +4739,7 @@ huron;The Huron, also known as the Wyandot, are an indigenous people of North Am
 glide;Glide is to move smoothly and continuously along, as if without effort.;1731344
 blooms;Blooms are flowers or clusters of flowers on plants.;1729847
 slogan;A slogan is a short and striking or memorable phrase used in advertising or to express a particular idea or purpose.;1726936
-elijah;Elijah was a prophet in the Hebrew Bible and the Quran.;1725901
+elijah;Elijah performed miracles including raising the dead and bringing fire down from the sky.;1725901
 biloxi;Biloxi is known for its beaches and casinos along the Gulf of Mexico.;1724937
 creme;Creme is a rich, thick dairy product made from the fat content of milk.;1724183
 waltz;Waltz is a ballroom dance in 3/4 time with strong accent on the first beat and a basic pattern of step-step-close.;1723021
@@ -4833,7 +4781,7 @@ eater;An eater is a person or animal that consumes food.;1702828
 tuners;Tuners are devices or people that adjust the frequency of a radio, television, or musical instrument to the correct pitch or channel.;1702332
 utopia;Utopia is an imaginary place or state of things in which everything is perfect.;1702159
 slider;A slider is a small sandwich or miniature hamburger, typically served as an appetizer or party food.;1702058
-cyrus;Cyrus the Great was the founder of the Achaemenid Empire, also known as the First Persian Empire.;1700817
+cyrus;Cyrus refers to several ancient kings of Persia, including Cyrus I and Cyrus II (the Great).;1700817
 hides;Hides are the skins of large animals, typically cattle, used for leather production.;1700672
 manure;Manure is organic matter used as fertilizer in agriculture.;1700070
 savior;A Savior is a person who saves, rescues, or delivers from harm or danger.;1699881
@@ -4860,7 +4808,7 @@ billie;Billie Eilish is an American singer-songwriter born in 2001, known for he
 ravens;Ravens are large black birds of the genus Corvus, known for their intelligence and adaptability.;1686982
 uptime;Uptime is the period during which a computer system or machine is operational and available for use.;1686290
 nuclei;Nuclei is the plural form of nucleus.;1685159
-gupta;The Gupta Empire was an ancient Indian empire that existed from approximately 320 to 550 CE.;1685132
+gupta;Gupta script is an ancient writing system used in India during the Gupta Empire period.;1685132
 tummy;Tummy is an informal term for the stomach or abdomen.;1685130
 axial;Axial means relating to or situated around an axis.;1685087
 slowed;Slowed is the past tense of slow, meaning to have reduced speed or pace.;1684926
@@ -4900,7 +4848,6 @@ astra;Astra is a Latin word meaning 'star' or 'constellation'.;1665170
 crosse;Crosse is an archaic spelling of 'cross'.;1665028
 mondo;Mondo is an Italian word meaning 'world' or 'universe'.;1664921
 ripley;Ripley is a fictional character from the Alien film franchise, portrayed by Sigourney Weaver.;1664786
-wyatt;Wyatt Earp was a famous American lawman and gambler in the American Old West, best known for his role in the Gunfight at the O.K. Corral.;1663704
 spades;Spades are a suit in a deck of playing cards, typically represented by black symbols resembling inverted hearts.;1663068
 coffin;A coffin is a funerary box used for viewing or holding a deceased person's body.;1662468
 otter;An otter is a carnivorous mammal in the subfamily Lutrinae of the weasel family Mustelidae.;1662335
@@ -4951,7 +4898,7 @@ childs;Childs is sometimes used as a possessive form of 'child'.;1630010
 minnie;Minnie Mouse is a fictional character created by Walt Disney, known as the girlfriend of Mickey Mouse.;1628627
 genie;A genie is a mythical spirit in Islamic and Arabic folklore, often depicted as capable of granting wishes when summoned.;1627726
 chars;Chars are the solid carbonaceous residues resulting from the incomplete combustion of organic matter.;1627316
-handel;George Frideric Handel was a German-born Baroque composer who became a British subject.;1626082
+handel;Handel is known for his operas, oratorios, and instrumental compositions, including the famous 'Messiah' oratorio.;1626082
 slater;A slater is a person whose occupation is slating roofs.;1625418
 orphan;An orphan is a child whose parents are dead.;1624738
 mcgee;McGee refers to various fictional characters, such as Timothy McGee from the TV series NCIS.;1624565
@@ -5079,7 +5026,6 @@ leafs;Leafs is a nonstandard plural form of 'leaf'.;1545582
 archie;Archie is a comic book series featuring the character Archie Andrews and his friends.;1545155
 bleach;Bleach is a chemical product used for removing color or whitening, often containing sodium hypochlorite.;1544694
 ferret;A ferret is a small, domesticated carnivorous mammal belonging to the weasel family, often kept as a pet.;1543424
-louisa;Louisa May Alcott was an American novelist, best known for writing the novel 'Little Women'.;1543294
 agony;Agony is extreme physical or mental pain.;1543205
 taller;Taller is the comparative form of 'tall', indicating greater height.;1542678
 enrich;Enrich means to improve or enhance the quality or value of something by adding to it.;1542232
@@ -5281,7 +5227,6 @@ spoil;Spoil means to diminish or destroy the value or quality of something.;1419
 lauder;Lauder refers to Estee Lauder, an American businesswoman who founded the cosmetics company Estee Lauder Companies.;1419067
 phono;Phono is a prefix meaning 'sound' or 'voice', derived from the Greek word 'phone'.;1418855
 daryl;Daryl is a character in the television series 'The Walking Dead', portrayed by Norman Reedus.;1418692
-lehman;Lehman Brothers was a global financial services firm that filed for bankruptcy in 2008, triggering a global financial crisis.;1418186
 invade;Invade means to enter a place or territory by force with the intention of occupying or conquering it.;1416953
 hoses;Hoses are flexible tubes used to convey fluids from one location to another.;1416325
 provo;Provo is the third-largest city in Utah, United States, located about 43 miles south of Salt Lake City.;1413618
@@ -5295,7 +5240,7 @@ cuffs;Cuffs are the turned-back or separately attached ends of sleeves on garmen
 famine;Famine is a severe shortage of food affecting a large number of people, leading to malnutrition and starvation.;1408340
 orally;Orally means by mouth or spoken rather than written.;1408223
 bearer;A bearer is a person or thing that carries or holds something.;1406898
-horace;Horace was an ancient Roman poet and satirist who lived from 65 BC to 8 BC.;1403852
+horace;Horace is considered one of the greatest Latin lyric poets.;1403852
 morals;Morals are principles of right and wrong behavior and the goodness or badness of human character.;1403442
 monet;Monet refers to Claude Monet, a French painter and founder of impressionist painting.;1402373
 pickle;A pickle is a food that has been preserved in vinegar or brine.;1402073
@@ -5377,13 +5322,12 @@ siren;A Siren is a mythological creature from Greek mythology, often depicted as
 vastly;Vastly is an adverb meaning to a very great extent or degree; immensely or enormously.;1354491
 olives;Olives are small, oval fruits from the olive tree (Olea europaea), typically eaten as food or pressed for oil.;1354049
 porous;Porous describes a material full of tiny holes that allow air or liquid to pass through.;1353861
-siegel;Don Siegel was an American film director known for films like 'Dirty Harry' and 'Invasion of the Body Snatchers'.;1353204
 freaky;Freaky means strange, weird, or bizarre.;1352418
 merlot;Merlot is a variety of red wine grape used as both a blending grape and for varietal wines.;1352308
 thirst;Thirst is the feeling of needing or desiring to drink something.;1352279
 lesley;Lesley is a variant spelling of Leslie.;1351518
 iodine;Iodine is a chemical element with the symbol I and atomic number 53.;1351488
-phoebe;In Greek mythology, Phoebe was a Titaness associated with the moon and prophecy.;1351263
+phoebe;Phoebe is a genus of small passerine birds in the tyrant flycatcher family.;1351263
 legged;Legged means having legs or limbs for locomotion.;1351011
 wipes;Wipes are disposable cloths used for cleaning or personal hygiene.;1350866
 krone;Krone is the official currency of several Nordic countries, including Denmark, Norway, and the Faroe Islands.;1350253
@@ -5417,7 +5361,6 @@ canals;Canals are artificial waterways constructed for navigation, irrigation, o
 ankara;Ankara is the capital city of Turkey.;1335650
 zephyr;A zephyr is a gentle, mild breeze.;1334891
 tamara;Tamara is a traditional Georgian dance characterized by its fluid and graceful movements.;1334577
-fannie;Fannie Farmer was an American culinary expert and author of cookbooks in the late 19th and early 20th centuries.;1333454
 ethic;An ethic is a set of moral principles or values that guide behavior.;1333320
 harlan;Harlan County is a county located in the U.S. state of Kentucky.;1333159
 taxon;A taxon is a taxonomic group of any rank, such as a species, family, or class in biological classification.;1333053
@@ -5451,7 +5394,6 @@ brandt;Brandt refers to Willy Brandt, a German statesman who served as Chancello
 amtrak;Amtrak is the national passenger railroad company of the United States.;1318727
 resid;Resid is a heavy residual oil obtained from petroleum distillation.;1318706
 lessee;A lessee is a person who holds the lease of a property; a tenant.;1318539
-utica;Utica was an ancient Phoenician city-state located in present-day Tunisia.;1318194
 grimm;Grimm refers to the Brothers Grimm, Jacob and Wilhelm Grimm, German academics and folklorists known for collecting and publishing fairy tales.;1317982
 guido;Guido is a slang term, often considered derogatory, for a working-class urban Italian-American man.;1317298
 tasted;Tasted is the past tense and past participle of the verb 'to taste', meaning to perceive or experience the flavor of something;1316517
@@ -5459,7 +5401,7 @@ licked;Licked is the past tense and past participle of the verb 'to lick', meani
 banged;Banged is the past tense of 'bang', meaning to strike or hit forcefully.;1316034
 rufus;Rufus is a genus of hummingbirds native to South America.;1315206
 phaser;A phaser is a fictional weapon in science fiction, particularly in the Star Trek universe.;1315140
-henrik;Henrik Ibsen was a Norwegian playwright and theatre director, considered one of the founders of modernism in theatre.;1314884
+henrik;Henrik Lundqvist is a former Swedish professional ice hockey goaltender who played for the New York Rangers in the National Hockey League.;1314884
 safest;Safest is the superlative form of safe, meaning most secure from danger, harm, or risk.;1314785
 daphne;Daphne is a genus of shrubs in the family Thymelaeaceae.;1314777
 serine;Serine is an amino acid that is used in the biosynthesis of proteins.;1314674
@@ -5547,10 +5489,9 @@ lowry;Lowry refers to Malcolm Lowry, a British novelist best known for his novel
 nashua;Nashua is the second-largest city in New Hampshire, known for its technology industry and quality of life.;1271630
 strut;A strut is a structural component designed to resist longitudinal compression.;1271153
 pavel;Pavel is commonly used in Russia, Czech Republic, Slovakia, and other Eastern European countries.;1271012
-eudora;Eudora was an email client developed by Steve Dorner in 1988 and later acquired by Qualcomm.;1269763
 wolff;Wolff refers to Caspar Friedrich Wolff, a German physiologist and embryologist known for his contributions to the field of embryology.;1269426
 plume;A plume is a feather, especially a large or showy one.;1269109
-sparta;Sparta was a prominent city-state in ancient Greece, known for its military prowess.;1268632
+sparta;Sparta was located in the region of Laconia in the Peloponnese.;1268632
 pantry;A pantry is a small room or closet in a house used for storing food, dishes, or linens.;1268228
 billet;A billet is a short, thick piece of wood or metal.;1267502
 racine;Racine refers to Jean Racine, a 17th-century French dramatist and one of the three great playwrights of French classical drama.;1267167
@@ -5655,7 +5596,6 @@ levied;Levied means to impose or collect a tax, fee, or fine.;1223424
 barns;Barns are large farm buildings used for storing crops, sheltering animals, or housing equipment.;1223270
 donnie;Donnie Darko is a 2001 science fiction psychological thriller film written and directed by Richard Kelly.;1223068
 unhcr;UNHCR is a UN agency mandated to protect and support refugees.;1222536
-lizzie;Lizzie Borden was a woman tried and acquitted for the 1892 axe murders of her father and stepmother in Fall River, Massachusetts.;1222470
 raids;Raids are sudden attacks on an enemy, typically involving a small armed force.;1222441
 intuit;To intuit is to know, sense, or understand something instinctively, without the need for conscious reasoning.;1222292
 solos;Solos are musical performances by a single person.;1222232

@@ -13,6 +13,7 @@ const OUTPUT = './out';
 
 const DEFINITION_FILTERS: RegExp[] = [
     /name/,
+    /[A-Z][a-z]+\swas\s(?:a|an|the)/,
     /stands for/, /is an acronym/,
     /is a town/, /is a city/, /is a country/, /is a state/, /capital of/,
     /is the [A-Z][a-z]+ word for/,
