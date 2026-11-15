@@ -19,7 +19,9 @@ namespace Rodak.Hexdle
 
         private void Update()
         {
-            switch (GameManager.Instance.GetLetterStatus(keyboardKey.KeyChar))
+            char keyChar = keyboardKey.KeyChar;
+            if (!Words.Letters.Contains(keyChar)) return;
+            switch (GameManager.Instance.GetLetterStatus(keyChar))
             {
                 case GameManager.LetterStatus.Hidden:
                     return;

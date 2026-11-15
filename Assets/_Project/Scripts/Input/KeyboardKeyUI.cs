@@ -21,7 +21,7 @@ namespace Rodak.Hexdle
         public event Action OnEnter;
 
         public Key Key => key;
-        public char KeyChar => key.ToString().ToLower()[0];
+        public char KeyChar => key.ToString().Length > 1 ? '*' : key.ToString().ToLower()[0];
 
         private void Awake()
         {

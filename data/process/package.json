@@ -1,0 +1,19 @@
+{
+    "name": "word-data-process",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "author": "",
+    "type": "module",
+    "main": "process.js",
+    "scripts": {
+        "run": "node main.ts"
+    },
+    "dependencies": {
+        "any-ascii": "^0.3.3"
+    },
+    "devDependencies": {
+        "@types/node": "^26.6.6",
+        "typescript": "^7.0.2"
+    }
+}
